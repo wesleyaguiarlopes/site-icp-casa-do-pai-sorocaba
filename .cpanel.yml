@@ -1,0 +1,7 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/hlwfqocnso44/public_html/
+    - /bin/rsync index.html $DEPLOYPATH
+    - /bin/rsync style.css $DEPLOYPATH
+    - /bin/rsync assets/ $DEPLOYPATH
