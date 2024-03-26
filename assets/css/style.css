@@ -587,30 +587,39 @@ textarea::-ms-input-placeholder
 }
 
 
-/*For Home Section*/
-.home{
-    background:url(../images/homebg.jpg) no-repeat center center;
-    color:#000;
+/* Home Page Banner */
+.home {
+    background:url(../images/banner-sky.jpg) no-repeat center center;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	-o-background-size:cover;
 	-ms-background-size:cover;
 }
+
 .home-wrapper{
     padding:180px 0px;
     overflow:hidden;
 }
-.home-content h1{
+
+.home-content h1 {
     font-size:48px;
     font-weight:700;
     margin-bottom: 30px;
     color: #fff;
 }
-.home-content p{
-    margin-bottom: 30px;
+
+.home-content h2 {
+    font-size: 31px;
+    font-weight: normal;
+    margin-top: 30px;
     color: #fff;
 }
+
+.home-content .icp {
+    font-size: 20px;
+}
+
 .home-content .home-contact{
     margin-top: 90px;
 }
