@@ -1,16 +1,16 @@
+:root {
+    /* COLOR PALETTE */
+    --color-level0: #565656;
+    --color-level1: #0b4f99;
+    --color-level2: #0f60a7;
+    --color-level3: #0a6fb4;
+    --color-level4: #8aaec7;
+    --color-level5: #fefefe;
+}
 
-
-/*
-Author: XpeedStudio
-Author URI: http://themeforest.net/user/XpeedStudio/portfolio
-*/
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
 html,
 body {
     font-size: 15px;
-    color: #565656;
     width: 100%;
     padding: 0;
     margin-left: 0;
