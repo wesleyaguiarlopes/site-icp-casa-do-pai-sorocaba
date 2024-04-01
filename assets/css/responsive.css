@@ -1,0 +1,160 @@
+:root {
+    /* color palette */
+    --color-level0: #565656;
+    --color-level1: #0f60a7;
+    --color-level2: #5E88BA;
+    --color-level3: #fefefe;
+}
+
+@media (max-width: 1440px) {
+    .limit-width {
+        width: 100%;
+    };
+}
+
+@media (max-width: 1024px) {
+
+    /* navigation menu */
+
+    .navigation-menu {
+        height: 50px;
+    }
+
+    .container-logo .logo {
+        width: 80px;
+        height: 80px;
+        top: 10px;
+    }
+    
+    .nav-bar ul {
+        gap: 30px;
+        font-size: 14px;
+    }
+
+    .social-bar a {
+        font-size: 16px
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* navigation menu */
+
+    .navigation-menu {
+        height: 50px;
+    }
+
+    .nav-bar {
+        width: 75%;
+    }
+
+    .nav-bar ul {
+        gap: 15px;
+        font-weight: bold;
+    }
+
+    .social-bar {
+        position: fixed;
+        bottom: 15px;
+        left: 15px;
+        background-color: var(--color-level3);
+        padding: 8px 2px;
+        border-radius: 50px;
+        box-shadow: 3px 3px 20px 0 #000;
+    }
+
+    .social-bar a {
+        font-size: 25px;
+        padding: 3px 10px;
+        margin: 0 5px;
+    }
+}
+
+@media (max-width: 620px) {
+
+    /* navigation menu */
+
+    .nav-bar {
+        display: none;
+    }
+
+    .social-bar a {
+        font-size: 25px;
+        padding: 3px 10px;
+        margin: 0 5px;
+    }
+
+    /* mobile navigation menu */
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .mobile-nav-bar.active {
+        display: block;
+    }
+}
+
+@media (min-width: 450px) {
+
+    /* mobile navigation menu */
+    
+    .mobile-nav-bar {
+        width: 300px;
+
+        position: absolute;
+        right: 0px;
+    }
+}
+
+@media (max-width: 375px) {
+
+    /* navigation menu */
+
+    .navigation-menu {
+        height: 40px;
+    }
+
+    .container-logo .logo {
+        width: 70px;
+        height: 70px;
+        top: 5px;
+    }
+
+    .social-bar {
+        padding: 11px 1px;
+    }
+
+    .social-bar a {
+        font-size: 18px;
+        padding: 5px 10px;
+        margin: 0 5px;
+    }
+
+    /* mobile navigation menu */
+
+    .mobile-menu .fa-bars{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    /* navigation menu */
+
+    .container-logo .logo {
+        width: 60px;
+        height: 60px;
+        top: 8px;
+    }
+
+    .social-bar {
+        padding: 6px 2px;
+    }
+
+    .social-bar a {
+        font-size: 15px;
+        padding: 3px 7px;
+        margin: 0 3px;
+    }
+}
