@@ -36,10 +36,12 @@ body {
     background-color: var(--color-level3);
     position: fixed;
     top: 0;
-    width: 100vw;
+    width: 100%;
     height: 70px;
     border-radius: 0 0 10px 10px;
     font-size: 16px;
+    border-bottom: 5px solid var(--color-level1);
+    z-index: 10;
 }
 
 .navigation-menu .container-menu {
@@ -133,4 +135,153 @@ body {
     padding: 10px 0px 10px 64px;
     color: var(--color-level0);
     text-transform: uppercase;
+}
+
+/* section default in main*/
+
+.section-default {
+    height: 100vh;
+    padding-top: 68px;
+    border-radius: 10px;
+    background-color: var(--color-level3);
+    border-top: 2px solid var(--color-level1);
+    border-bottom: 2px solid var(--color-level1);
+}
+
+/* section banner */
+
+#home {
+    background-image: url(/assets/images/banner-sky.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: var(--color-level3);
+}
+
+#acrylic-background {
+    background-color: #0000002a;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#call-to-action {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.church {
+    font-size: 40px;
+    font-weight: 200;
+    position: absolute;
+    top: -10px;
+    left: 60px;
+}
+
+.communion {
+    font-size: 100px;
+}
+
+.full {
+    font-size: 80px;
+    font-weight: 500;
+    position: absolute;
+    left: 116px;
+    bottom: -55px;
+}
+
+.city {
+    position: absolute;
+    right: 110px;
+    bottom: -18px;
+}
+
+.location {
+    position: absolute;
+    right: 70px;
+    bottom: -15px;
+}
+
+.location i {
+    font-size: 2rem;
+    color: var(--color-level3);
+    text-shadow: 5px 5px #000;
+}
+
+.slogan {
+    font-size: 17px;
+    margin-top: 50px;
+    letter-spacing: 15px;
+}
+
+#banner {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.year {
+    font-size: 80px;
+    font-weight: 500;
+    position: absolute;
+    left: -61px;
+    top: -75px;
+}
+
+.phrase {
+    font-size: 40px;
+    font-weight: 200;
+}
+
+.year-theme {
+    font-size: 90px;
+    position: absolute;
+    left: -80px;
+    bottom: -90px;
+}
+
+.pigeon {
+    font-size: 2rem;
+    position: absolute;
+    top: -70px;
+    right: 160px;
+}
+
+.theme-verse {
+    font-size: 17px;
+    margin-top: 70px;
+    width: 80%;
+    text-align: center;
+}
+
+.btn-bible {
+    color: var(--color-level3);
+    background-color: var(--color-level1);
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 8px 14px;
+    display: flex;
+    align-items: center;
+    box-shadow: 3px 3px 20px 0 #000;
+    margin-top: 15px;
+}
+
+.btn-bible:hover {
+    text-decoration: underline;
+}
+
+.btn-bible i {
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+.title {
+    position: relative;
 }
