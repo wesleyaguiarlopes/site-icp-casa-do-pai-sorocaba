@@ -148,6 +148,15 @@ body {
     border-bottom: 2px solid var(--color-level1);
 }
 
+.section-default-1 {
+    height: 100vh;
+    padding-top: 68px;
+    border-radius: 10px;
+    background-color: var(--color-level3);
+    border-top: 2px solid var(--color-level1);
+    border-bottom: 2px solid var(--color-level1);
+}
+
 /* section banner */
 
 #home {
@@ -284,4 +293,36 @@ body {
 
 .title {
     position: relative;
+}
+
+/* section cults */
+
+#cults h3 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.cults-container {
+    height: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.cults-content img {
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 20px 0 #000;
+}
+
+.campaign {
+    position: relative;
+}
+
+.campaign p {
+    color: rgb(255, 255, 156);
+    position: absolute;
+    bottom: 110px;
+    left: 65px;
 }

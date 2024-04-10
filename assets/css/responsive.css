@@ -83,6 +83,18 @@
         padding: 7px 12px;
         margin-top: 10px;
     }
+
+    /* section cults */
+
+    .cults-content img {
+        width: 300px;
+    }
+
+    .campaign p {
+        font-size: 14px;
+        bottom: 90px;
+        left: 35px;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -102,6 +114,18 @@
 
     .social-bar a {
         font-size: 16px
+    }
+
+    /* section cults */
+
+    .cults-content img {
+        width: 250px;
+    }
+
+    .campaign p {
+        font-size: 12px;
+        bottom: 70px;
+        left: 25px;
     }
 }
 
@@ -193,6 +217,16 @@
         font-size: 16px;
         padding: 8px 14px;
         margin-top: 16px;
+    }
+
+    /* section cults */
+
+    .cults-container {
+        flex-direction: column;
+    }
+
+    .cults-content img {
+        width: 260px;
     }
 }
 
@@ -407,6 +441,33 @@
         top: -45px;
         right:50px;
     }
+
+    /* section default in main*/
+
+    .section-default-1 {
+        height: auto;
+    }
+
+    /* section cults */
+
+    #cults h3 {
+        margin: 15px 0 15px 0;
+        font-size: 25px;
+    }
+
+    .cults-container {
+        gap: 20px;
+    }
+
+    .cults-content img {
+        width: 310px;
+    }
+
+    .campaign p {
+        font-size: 16px;
+        bottom: 90px;
+        left: 20px;
+    }
 }
 
 @media (max-width: 375px) {
@@ -539,5 +600,30 @@
     .btn-bible i {
         font-size: 1rem;
         margin-right: 6px;
+    }
+
+    .section-default-1 {
+        height: auto;
+    }
+
+    /* section cults */
+
+    #cults h3 {
+        margin: 0 0 10px 0;
+        font-size: 20px;
+    }
+
+    .cults-container {
+        gap: 10px;
+    }
+
+    .cults-content img {
+        width: 200px;
+    }
+
+    .campaign p {
+        font-size: 10px;
+        bottom: 60px;
+        left: 15px;
     }
 }
