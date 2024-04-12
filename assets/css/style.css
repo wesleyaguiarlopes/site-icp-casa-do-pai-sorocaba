@@ -297,7 +297,7 @@ body {
 
 /* section cults */
 
-#cults h3 {
+.section-title {
     text-align: center;
     font-size: 30px;
     font-weight: 300;
@@ -325,4 +325,32 @@ body {
     position: absolute;
     bottom: 110px;
     left: 65px;
+}
+
+/* section local */
+
+.section-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+#local p {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#maps {
+    margin: 0 auto 0 auto;
+    width: 1050px;
+    height: 80%;
+}
+
+#maps iframe {
+    width:100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 20px 0 #000;
 }

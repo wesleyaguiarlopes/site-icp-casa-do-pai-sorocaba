@@ -127,6 +127,12 @@
         bottom: 70px;
         left: 25px;
     }
+
+    /* section local */
+
+    #maps {
+        width: 90%;
+    }
 }
 
 @media (max-width: 836px) {
@@ -450,7 +456,7 @@
 
     /* section cults */
 
-    #cults h3 {
+    .section-title {
         margin: 15px 0 15px 0;
         font-size: 25px;
     }
@@ -467,6 +473,12 @@
         font-size: 16px;
         bottom: 90px;
         left: 20px;
+    }
+
+    /* section local */
+
+    #maps {
+        height: 70%;
     }
 }
 
@@ -608,7 +620,7 @@
 
     /* section cults */
 
-    #cults h3 {
+    .section-title {
         margin: 0 0 10px 0;
         font-size: 20px;
     }
