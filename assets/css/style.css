@@ -316,17 +316,6 @@ body {
     box-shadow: 3px 3px 20px 0 #000;
 }
 
-.campaign {
-    position: relative;
-}
-
-.campaign p {
-    color: rgb(255, 255, 156);
-    position: absolute;
-    bottom: 110px;
-    left: 65px;
-}
-
 /* section contribute */
 
 #contribute {

@@ -90,12 +90,6 @@
         width: 300px;
     }
 
-    .campaign p {
-        font-size: 14px;
-        bottom: 90px;
-        left: 35px;
-    }
-
     /* section contribute */
 
     .content-pix, .content-qr-code {
@@ -126,12 +120,6 @@
 
     .cults-content img {
         width: 250px;
-    }
-
-    .campaign p {
-        font-size: 12px;
-        bottom: 70px;
-        left: 25px;
     }
 
     /* section local */
@@ -500,12 +488,6 @@
         width: 310px;
     }
 
-    .campaign p {
-        font-size: 16px;
-        bottom: 90px;
-        left: 20px;
-    }
-
     /* section contribute */
 
     .content-pix, .content-qr-code-mobile {
@@ -681,11 +663,5 @@
 
     .cults-content img {
         width: 200px;
-    }
-
-    .campaign p {
-        font-size: 10px;
-        bottom: 60px;
-        left: 15px;
     }
 }
