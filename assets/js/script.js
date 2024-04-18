@@ -1,4 +1,4 @@
-/* mobile navigation menu - open and close mobile menu*/
+// mobile navigation menu - open and close mobile menu
 
 $(document).ready(function() {
     $('.mobile-menu').on('click', function() {
@@ -7,7 +7,15 @@ $(document).ready(function() {
     });
 });
 
+$(document).ready(function() {
+    $('.mobile-nav-items').on('click', function() {
+        $('.mobile-nav-bar').removeClass('active')
+        $('.fa-bars').removeClass('fa-xmark')
+    });
+});
+
 // copy the pix key to the clipboard
+
 function copy(){
     var pixkey = document.getElementById("key-pix");
     pixkey.select();
