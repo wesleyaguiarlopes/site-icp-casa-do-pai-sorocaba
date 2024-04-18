@@ -116,6 +116,72 @@
             </section>
             <section id="contribute" class="section-default">
                 <h3 class="section-title">Contribuir</h3>
+                <div class="contribute-container limit-width">
+                    <div class="content-pix">
+                        <p>Nesta área, você pode contribuir com a <span>ICP Sorocaba</span>, com os seus <span class="tithe">dízimos</span> e <span class="offer">ofertas</span>, através do Pix
+                            <i class="fa-brands fa-pix"></i>
+                        </p>
+                        <p>Veja nos cards abaixo, o que a palavra de <span>Deus</span>, diz, sobre <span class="tithe">dízimos</span> e <span class="offer">oferta</span> :</p>
+                        <div class="card-bible">
+                            <h4 class="tithe">Dizimista</h4>
+                            <p class="bible-book">Tragam todos os seus dízimos aos depósitos do templo, para que haja provisão em minha casa. Se o fizerem”, diz o SENHOR dos Exércitos, “abrirei as janelas do céu para vocês. Derramarei tantas bênçãos que não haverá espaço para guardá-las! Sim, ponham-me à prova!</br>
+                                <span>Malaquias 3:10 NVT</span>
+                            </p>
+                        </div>
+                        <div class="card-bible">
+                            <h4 class="offer">Ofertante</h4>
+                            <p class="bible-book">Cada um deve decidir em seu coração quanto dar. Não contribuam com relutância ou por obrigação. “Pois Deus ama quem dá com alegria.” Deus é capaz de lhes conceder todo tipo de bênçãos, para que, em todo tempo, vocês tenham tudo de que precisam, e muito mais ainda, para repartir com outros.”</br>
+                                <span>2° Coríntios 9:7-8 NVT</span></p>
+                        </div>
+                    </div>
+                    <div class="content-qr-code">
+                        <p>
+                            <span><i class="fa-solid fa-arrow-right"></i> </span>
+                            Abra o aplicativo do seu banco <i class="fa-solid fa-building-columns"></i> .</br>
+                            <span><i class="fa-solid fa-arrow-right"></i> </span>
+                            Escolha a opção de Pix por QR Code.</br>
+                            <span><i class="fa-solid fa-arrow-right"></i> </span>
+                            Aponte a câmera <i class="fa-solid fa-camera"></i> para o QR Code <i class="fa-solid fa-qrcode"></i> abaixo.</br>
+                            <span><i class="fa-solid fa-arrow-right"></i> </span>
+                            Confirme se a transferência, está sendo realizada para :</br>
+                            <span>Evandro Jose Luís Lopes</span></br>
+                            <span><i class="fa-solid fa-arrow-right"></i> </span>
+                            Siga os passos do seu aplicativo, para realizar a transferência.
+                        </p>
+                        <img src="assets/images/qr-code/qrcode-pix.png" alt="QR Code Pix" title="Aponte a câmera com leitor de Qr Code do seu Banco">
+                        <div class="key-pix">
+                            <p><span><i class="fa-solid fa-arrow-right"></i> </span>Ou copie a <span>Chave Pix : E-mail</span> para utilizar no <span>Internet Banking</span></p>
+                            <input type="text" id="key-pix" value="ejll@hotmail.com" readonly=“true”>
+                            <button class="btn-copy-pix" title="Clique aqui para copiar a chave Pix" onclick="copy()">Copiar Chave Pix
+                                <i class="fa-regular fa-copy"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="content-qr-code-mobile">
+                        <p>
+                            <span><i class="fa-solid fa-arrow-right"></i> </span>
+                            Abra o aplicativo do seu banco <i class="fa-solid fa-building-columns"></i> .</br>
+                            <span><i class="fa-solid fa-arrow-right"></i> </span>
+                            Escolha a opção de Pix por QR Code.</br>
+                            <span><i class="fa-solid fa-arrow-right"></i> </span>
+                            Aponte a câmera <i class="fa-solid fa-camera"></i> para o QR Code <i class="fa-solid fa-qrcode"></i> abaixo.</br>
+                            <span><i class="fa-solid fa-arrow-right"></i> </span>
+                            Confirme se a transferência, está sendo realizada para :</br>
+                            <span>Evandro Jose Luís Lopes</span></br>
+                            <span><i class="fa-solid fa-arrow-right"></i> </span>
+                            Siga os passos do seu aplicativo, para realizar a transferência.
+                        </p>
+                        <img src="assets/images/qr-code/qrcode-pix.png" alt="QR Code Pix" title="Aponte a câmera com leitor de Qr Code do seu Banco">
+                        <div class="key-pix">
+                            <p><span><i class="fa-solid fa-arrow-right"></i> </span>Ou copie a <span>Chave Pix : E-mail</span> para utilizar no <span>Internet Banking</span></p>
+                            <p id="only-mobile-max-450"><span><i class="fa-solid fa-arrow-right"></i> </span>Copie a <span>Chave Pix : E-mail</span>, clicando no botão <i class="fa-regular fa-copy"></i> para utilizar no seu <span>Aplicativo do banco</span>. Confirme se a transferência está para <span>Evandro Jose Luíz Lopes</span></p>
+                            <input type="text" id="key-pix-mobile" value="ejll@hotmail.com" readonly=“true”>
+                            <button class="btn-copy-pix" title="Clique aqui para copiar a chave Pix" onclick="copy_mobile()">Copiar Chave Pix
+                                <i class="fa-regular fa-copy"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </section>
             <section id="local" class="section-default">
                 <h3 class="section-title">Onde estamos</h3>
@@ -124,7 +190,7 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.004526347821!2d-47.51182262379736!3d-23.496346459208606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c5f4b675a7f80b%3A0xfa8c4036c5d87ec9!2sIgreja%20Comunh%C3%A3o%20Plena!5e0!3m2!1spt-BR!2sbr!4v1712875160121!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </section>
-            <section id="contribute" class="section-default">
+            <section id="" class="section-default">
                 <h3 class="section-title">Seção em Construção</h3>
             </section>
         </main>
