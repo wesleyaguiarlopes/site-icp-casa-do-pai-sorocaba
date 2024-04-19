@@ -122,6 +122,21 @@
         width: 250px;
     }
 
+    /* section team icp */
+
+    #team {
+        padding-bottom: 20px;
+    }
+
+    .team-icp {
+        margin-top: 10px;
+    }
+
+    .team-icp img {
+        height: auto;
+        width: 98%;
+    }
+
     /* section local */
 
     #maps {

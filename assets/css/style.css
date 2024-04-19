@@ -316,6 +316,31 @@ body {
     box-shadow: 3px 3px 20px 0 #000;
 }
 
+/* section team icp */
+
+#team {
+    background-image: url(/assets/images/wallpaper/wallpaper-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(--color-level3);
+    height: auto;
+    padding-bottom: 68px;
+}
+
+.team-icp {
+    margin-top: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-icp img {
+    height: 70vh;
+    border-radius: 10px;
+    box-shadow: 10px 10px 600px #000;
+}
+
 /* section contribute */
 
 #contribute {
