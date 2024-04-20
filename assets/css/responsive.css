@@ -83,8 +83,51 @@
 
     /* section contribute */
 
+    #contribute p {
+        font-size: 12px;
+    }
+
     .content-pix, .content-qr-code {
+        padding: 0 10px;
+    }
+
+    .contribute-container {
+        padding: 0 10px;
+    }
+
+    .content-qr-code img {
+        width: 200px;
+    }
+
+    .key-pix {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 1280px) {
+
+    /* section contribute */
+
+    #contribute p {
+        font-size: 16px;
+    }
+
+    .content-pix, .content-qr-code {
+        padding: 0 30px;
+    }
+
+    .contribute-container {
         padding: 0 20px;
+    }
+
+    .content-qr-code img {
+        width: 250px;
+    }
+
+    .key-pix {
+        display: flex;
+        flex-direction: column;
     }
 }
 
