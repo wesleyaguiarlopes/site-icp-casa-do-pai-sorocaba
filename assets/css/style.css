@@ -208,18 +208,6 @@ body {
     bottom: -18px;
 }
 
-.location {
-    position: absolute;
-    right: 70px;
-    bottom: -15px;
-}
-
-.location i {
-    font-size: 2rem;
-    color: var(--color-level3);
-    text-shadow: 5px 5px #000;
-}
-
 .slogan {
     font-size: 17px;
     margin-top: 50px;
