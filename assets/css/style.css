@@ -175,6 +175,14 @@ body {
     border-bottom: 2px solid var(--color-level1);
 }
 
+/* section title default */
+
+.section-title {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
 /* section banner */
 
 #home {
@@ -302,12 +310,6 @@ body {
 }
 
 /* section cults */
-
-.section-title {
-    text-align: center;
-    font-size: 30px;
-    font-weight: 300;
-}
 
 .cults-container {
     height: 95%;
@@ -444,12 +446,6 @@ body {
 }
 
 /* section local */
-
-.section-title {
-    text-align: center;
-    font-size: 30px;
-    font-weight: 300;
-}
 
 #local p {
     width: 90%;
