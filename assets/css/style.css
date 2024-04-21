@@ -479,3 +479,15 @@ body {
     border-radius: 10px;
     box-shadow: 3px 3px 20px 0 #000;
 }
+
+/* footer */
+
+footer {
+    background-color: var(--color-level2);
+    width: 100%;
+    color: var(--color-level3);
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
