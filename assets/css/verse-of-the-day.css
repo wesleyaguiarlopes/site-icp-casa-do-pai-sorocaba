@@ -1,0 +1,61 @@
+:root {
+    /* color palette */
+    --color-level0: #565656;
+    --color-level1: #0f60a7;
+    --color-level2: #5E88BA;
+    --color-level3: #fefefe;
+}
+
+body {
+    background-color: var(--color-level3);
+    color: var(--color-level0);
+}
+
+#verse-of-the-day {
+    width: 768px;
+    margin: 0 auto;
+    border: 0;
+    height: auto;
+}
+
+#verse-of-the-day img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 30px 0 0 0;
+}
+
+#verse-of-the-day p {
+    line-height: 30px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 30px;
+    text-align: justify;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+}
+
+@media (max-width: 768px) {
+
+    #verse-of-the-day {
+        width: 100%;
+    }
+    
+    #verse-of-the-day img {
+        width: 100%;
+        border-radius: 10px;
+        margin: 1px 0 0 0;
+    }
+    
+    #verse-of-the-day p {
+        line-height: 30px;
+        margin: 0 auto;
+        width: 100%;
+        padding: 15px;
+        text-align: left;
+        font-size: 14px;
+    }
+
+}
