@@ -311,7 +311,7 @@ body {
 
 /* section cults */
 
-#cults {
+#cultos {
     color: #000;
     background-image: url(/assets/images/wallpaper/wallpaper-2-opacity-40.png);
     background-repeat: no-repeat;
@@ -327,7 +327,7 @@ body {
     justify-content: space-evenly;
 }
 
-#cults h3 {
+#cultos h3 {
     text-shadow: 1px 1px 20px #000;
 }
 
@@ -364,7 +364,7 @@ body {
 
 /* section contribute */
 
-#contribute {
+#contribuir {
     color: var(--color-level3);
     background-color: var(--color-level2);
 }
