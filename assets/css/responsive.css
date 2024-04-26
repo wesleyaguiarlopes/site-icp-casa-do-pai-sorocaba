@@ -140,7 +140,7 @@
         height: 80px;
         top: 10px;
     }
-    
+
     .nav-bar ul {
         gap: 30px;
         font-size: 14px;
@@ -173,8 +173,16 @@
 
     /* section local */
 
-    #maps {
-        width: 90%;
+    #local {
+
+        .btn-waze::after {
+            content: "ir com Waze";
+        }
+
+        .btn-maps::after {
+            content: "ir com Maps";
+        }
+
     }
 }
 
@@ -422,6 +430,15 @@
         padding: 7px 12px;
         margin-top: 10px;
     }
+
+    /* section local */
+
+    #local {
+
+        .title::after {
+            content: "Localização";
+        }
+    }
 }
 
 @media (min-width: 450px) {
@@ -528,12 +545,6 @@
     #only-mobile-max-450 {
         display: block;
         text-align: center;
-    }
-
-    /* section local */
-
-    #maps {
-        height: 70%;
     }
 }
 
