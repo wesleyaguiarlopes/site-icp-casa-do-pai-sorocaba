@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
+        <!-- open graph -->
+
+        <!-- op - pedido de oracão -->
+        <meta property="og:title" content="ICP Casa do Pai Sorocaba | Pedido de Oração">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://www.comunhaoplenasorocaba.com.br/#pedido-de-oracao">
+        <meta property="og:description" content="Nossos intercessores estarão orando pela sua causa">
+        <meta property="og:site_name" content="ICP Casa do Pai | Pedido de Oração">
+        <meta property="og:image" content="https://i.ibb.co/FHLP8Gs/prayer-request.jpg">
+
         <!-- import -->
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
         <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
@@ -41,8 +51,9 @@
                 </div>
                 <nav class="nav-bar">
                     <ul>
-                        <li class="nav-items"><a href="https://www.comunhaoplenasorocaba.com.br">home</a></li>
+                        <li class="nav-items"><a href="https://www.comunhaoplenasorocaba.com.br">início</a></li>
                         <li class="nav-items"><a href="#cultos">cultos</a></li>
+                        <li class="nav-items"><a href="#pedido-de-oracao">pedir oração</a></li>
                         <li class="nav-items"><a href="#contribuir">contribuir</a></li>
                         <li class="nav-items"><a href="#local">onde estamos</a></li>
                     </ul>
@@ -58,8 +69,9 @@
             </div>
             <div class="mobile-nav-bar">
                 <ul>
-                    <li class="mobile-nav-items border-bottom"><a href="https://www.comunhaoplenasorocaba.com.br">home</a></li>
+                    <li class="mobile-nav-items border-bottom"><a href="https://www.comunhaoplenasorocaba.com.br">início</a></li>
                     <li class="mobile-nav-items border-bottom"><a href="#cultos">cultos</a></li>
+                    <li class="mobile-nav-items border-bottom"><a href="#pedido-de-oracao">pedir oração</a></li>
                     <li class="mobile-nav-items border-bottom"><a href="#contribuir">contribuir</a></li>
                     <li class="mobile-nav-items border-bottom"><a href="#local">onde estamos</a></li>
                 </ul>
@@ -106,11 +118,59 @@
                     </div>
                 </div>
             </section>
-            <section id="team" class="section-default">
-                <h3 class="section-title">Equipe ICP</h3>
-                <div class="team-icp">
-                    <img src="assets/images/photos-icp/team-icp.jpeg" alt="">
-                </div>
+            <section id="pedido-de-oracao">
+                <form action="https://formsubmit.co/7646a5d577513e1ec9f9705c56dd5d2d" method="POST" autocomplete="on">
+                    <h2 class="title">Pedido de</h2>
+                    <h3 class="subtitle">Oração</h3>
+                    <div class="info-bible">
+                        <p>A palavra de Deus diz em <span>Efésios 6:18 NTLH "...orem sempre por todo o povo de Deus."</span></p>
+                        <p>Faça o seu pedido de oração, preenchendo o formulário abaixo que nossa equipe de intercessores vai orar pela sua causa.</p>
+                    </div>
+                    <div class="group">
+                        <div class="items-form">
+                            <label for="Nome">Nome (Ex: José Oliveira)
+                                <span class="asterisk">*</span>
+                            </label>
+                            <input type="text" name="Nome" placeholder="Informe o seu nome" autocomplete="name" required>
+                        </div>
+                        <div class="items-form">
+                            <label for="Email">E-mail</label>
+                            <input type="text" name="Email" placeholder="Informe o seu endereço de e-mail" autocomplete="email">
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div>
+                            <label for="Bairro">Bairro</label>
+                            <input type="text" name="Bairro" placeholder="Informe o seu bairro" autocomplete="address-level3">
+                        </div>
+                        <div>
+                            <label for="Cidade">Cidade</label>
+                            <input type="text" name="Cidade" placeholder="Informe a sua cidade" autocomplete="address-level2">
+                        </div>
+                    </div>
+                    <div class="container-msg">
+                        <label for="Pedido_de_Oração">Pedido de Oração
+                            <span class="asterisk">*</span>
+                        </label>
+                        <textarea name="Pedido_de_Oração" id="message" rows="5" placeholder="Digite aqui o seu pedido de oração..." required></textarea>
+                    </div>
+                    <div class="btn-form">
+                        <button type="submit" title="Clique para Enviar o seu Pedido de Oração">
+                            <i class="fa-regular fa-paper-plane"></i>
+                            Enviar Pedido
+                        </button>
+                        <button type="reset" title="Clique para Limpar os Campos">
+                            <i class="fa-solid fa-broom"></i>
+                            Limpar Campos
+                        </button>
+                    </div>
+                    <input type="hidden" name="_cc" value="lopes.a.wesley@gmail.com">
+                    <!-- Para definir mais endereços de e-mail, adiciono a vírgula -->
+                    <input type="hidden" name="_subject" value="Novo Pedido de Oração através do Site">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://www.comunhaoplenasorocaba.com.br/pedido-de-oracao/enviado">
+                </form>
             </section>
             <section id="contribuir" class="section-default">
                 <h3 class="section-title">Contribuir</h3>
@@ -190,6 +250,12 @@
                 </div>
                 <div class="map-container">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14636.960139053444!2d-47.498090850000004!3d-23.4878622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c5f58a8d9d3fef%3A0xda2f7b12f63e9ff6!2sICP%20Casa%20do%20Pai%20-%20Sorocaba!5e0!3m2!1spt-BR!2sbr!4v1714057987379!5m2!1spt-BR!2sbr"></iframe>
+                </div>
+            </section>
+            <section id="team" class="section-default">
+                <h3 class="section-title">Equipe ICP</h3>
+                <div class="team-icp">
+                    <img src="assets/images/photos-icp/team-icp.jpeg" alt="">
                 </div>
             </section>
         </main>

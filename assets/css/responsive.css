@@ -276,6 +276,20 @@
     .cults-content img {
         width: 260px;
     }
+
+    /* section prayer request */
+
+    #pedido-de-oracao {
+
+        .group {
+            flex-direction: column;
+        }
+
+        form > div > div{
+            width: 93%;
+            margin-bottom: 10px;
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -316,6 +330,12 @@
         font-size: 25px;
         padding: 3px 10px;
         margin: 0 5px;
+    }
+
+    /* section prayer request */
+
+    #pedido-de-oracao, #pedido-de-oracao-enviado {
+        padding: 40px 5px;
     }
 
     /* section contribute */
@@ -431,6 +451,21 @@
         margin-top: 10px;
     }
 
+    /* section prayer request */
+
+    #pedido-de-oracao {
+
+        form {
+            padding: 0px;
+        }
+    }
+
+    #pedido-de-oracao-enviado {
+        #btn-home::after {
+            content: "Ir para o Início";
+        }
+    }
+
     /* section local */
 
     #local {
@@ -526,6 +561,14 @@
 
     .cults-content img {
         width: 310px;
+    }
+
+    /* section prayer request */
+
+    #pedido-de-oracao-enviado {
+        .card-thanks {
+            padding: 40px 10px;
+        }
     }
 
     /* section contribute */
@@ -695,5 +738,11 @@
 
     .cults-content img {
         width: 200px;
+    }
+}
+
+@media (max-height: 820px) {
+    #pedido-de-oracao {
+        height: auto;
     }
 }
