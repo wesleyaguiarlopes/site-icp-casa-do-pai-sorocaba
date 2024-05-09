@@ -32,6 +32,10 @@ body {
     text-align: justify;
 }
 
+span {
+    color: var(--color-level1);
+}
+
 footer {
     position: relative;
     bottom: 0;
