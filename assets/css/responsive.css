@@ -303,8 +303,6 @@
 
     .section-default {
         padding-top:49px;
-        border-top: 1.5px solid var(--color-level1);
-        border-bottom: 1.5px solid var(--color-level1);
     }
 
     .nav-bar {
