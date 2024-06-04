@@ -16,12 +16,12 @@ body {
     margin: 0 auto;
     border: 0;
     height: auto;
+    text-align: center;
 }
 
 #verse-of-the-day img {
-    width: 100%;
+    width: 50%;
     border-radius: 30px;
-    margin: 30px 0 0 0;
 }
 
 #verse-of-the-day p {
