@@ -429,7 +429,6 @@ body {
         border: none;
         box-shadow: 0px 0px 10px #afafaf;
         font-size: 15px;
-        flex-grow: 1;
     }
 
     button:hover {
