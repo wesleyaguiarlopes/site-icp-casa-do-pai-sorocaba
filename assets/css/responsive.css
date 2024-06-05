@@ -75,12 +75,6 @@
         margin-top: 10px;
     }
 
-    /* section cults */
-
-    .cults-content img {
-        width: 300px;
-    }
-
     /* section contribute */
 
     #contribuir p {
@@ -148,12 +142,6 @@
 
     .social-bar a {
         font-size: 16px
-    }
-
-    /* section cults */
-
-    .cults-content img {
-        width: 250px;
     }
 
     /* section team icp */
@@ -265,16 +253,6 @@
         font-size: 16px;
         padding: 8px 14px;
         margin-top: 16px;
-    }
-
-    /* section cults */
-
-    .cults-container {
-        flex-direction: column;
-    }
-
-    .cults-content img {
-        width: 260px;
     }
 
     /* section prayer request */
@@ -540,27 +518,6 @@
         right:50px;
     }
 
-    /* section default in main*/
-
-    .section-default-1 {
-        height: auto;
-    }
-
-    /* section cults */
-
-    .section-title {
-        margin: 15px 0 15px 0;
-        font-size: 25px;
-    }
-
-    .cults-container {
-        gap: 20px;
-    }
-
-    .cults-content img {
-        width: 310px;
-    }
-
     /* section prayer request */
 
     #pedido-de-oracao-enviado {
@@ -718,25 +675,6 @@
         font-size: 1rem;
         margin-right: 6px;
     }
-
-    .section-default-1 {
-        height: auto;
-    }
-
-    /* section cults */
-
-    .section-title {
-        margin: 0 0 10px 0;
-        font-size: 20px;
-    }
-
-    .cults-container {
-        gap: 10px;
-    }
-
-    .cults-content img {
-        width: 200px;
-    }
 }
 
 @media (max-height: 820px) {
@@ -745,7 +683,19 @@
     }
 }
 
-/* section photo gallery */
+/* --- SECTION CULTS --- */
+
+@media (max-width: 884px) {
+    #cultos {
+        height: auto;
+
+        .cults-container {
+            flex-direction: column;
+        }
+    }
+}
+
+/* --- SECTION PHOTO GALLERY --- */
 
 @media (max-width: 1239px) and (min-width: 710px) {
     #galeria-de-fotos {

@@ -163,18 +163,14 @@ body {
     background-color: var(--color-level3);
 }
 
-.section-default-1 {
-    height: 100vh;
-    padding-top: 68px;
-    background-color: var(--color-level3);
-}
-
 /* section title default */
 
 .section-title {
     font-size: 30px;
     font-weight: bold;
     text-align: center;
+    color: var(--color-level3);
+    backdrop-filter: blur(10px);
 }
 
 /* section banner */
@@ -362,29 +358,39 @@ body {
 /* section cults */
 
 #cultos {
-    color: #000;
     background-image: url(/assets/images/wallpaper/wallpaper-2-opacity-40.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-}
+    height: 100vh;
+    padding: 68px 10px;
 
-.cults-container {
-    height: 95%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
+    .title-cultus {
+        font-size: 30px;
+        text-align: center;
+        color: var(--color-level3);
+        backdrop-filter: blur(10px);
+    }
 
-#cultos h3 {
-    text-shadow: 1px 1px 20px #000;
-}
+    .cults-container {
+        height: 95%;
+        max-width: 1440px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 10px;
 
-.cults-content img {
-    width: 400px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 300px 20px #000;
+        .cults-content {
+            max-width: 400px;
+
+            img {
+                width: 100%;
+                border-radius: 30px;
+            }
+        }
+    }
 }
 
 /* section photo-gallery */
