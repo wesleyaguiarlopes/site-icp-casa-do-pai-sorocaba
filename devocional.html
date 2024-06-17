@@ -1,15 +1,23 @@
+<?php
+    $con = mysqli_connect("localhost", "u267143979_icpsorocaba", "EliasMaluf1402@", "u267143979_db_icpsorocaba");
+    $sql = "select * from tb_devotionalverse where 1";
+    $resultado = $con->query($sql);
+    $row = $resultado->fetch_object();
+    $rs = mysqli_query($con, $sql);
+    mysqli_close($con);
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
         <!-- open graph -->
 
-        <!-- og - pedido de oracão -->
+        <!-- og - devotional -->
         <meta property="og:title" content="Devocional | ICP Casa do Pai Sorocaba">
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://www.comunhaoplenasorocaba.com.br/devocional">
         <meta property="og:description" content="Seja edificado com a palavra, através do devocional que preparamos para você">
         <meta property="og:site_name" content="ICP Casa do Pai">
-        <meta property="og:image" content="https://i.ibb.co/hcJVGWw/ICP-Casa-do-Pai.jpg">
+        <meta property="og:image" content="assets/images/open-graph/open-graph_daily-devotional.jpg">
 
         <!-- browser visual settings -->
         <link rel="icon" type="image/x-icon" href="assets/images/logotipo/logo_icon_icp-casa-do-pai.ico">
@@ -31,10 +39,8 @@
         <meta name="author" content="Wesley Lopes">
 
         <!-- import -->
-        <link rel="stylesheet" type="text/css" href="assets/css/reset-css-and-color-palette.css?v=30">
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css?v=30">
-        <link rel="stylesheet" type="text/css" href="assets/css/responsive.css?v=30">
-        <link rel="stylesheet" type="text/css" href="assets/css/verse-of-the-day.css?v=30">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css?v=001">
+        <link rel="stylesheet" type="text/css" href="assets/css/responsive.css?v=001">
 
         <!-- import CDN icons -->
         <script src="https://kit.fontawesome.com/d5ee391d5f.js" crossorigin="anonymous"></script>
@@ -81,11 +87,17 @@
             </div>
         </header>
         <main id="content">
-            <section id="verse-of-the-day" class="section-default">
-                <h3 class="section-title">Devocional</h3>
-                <img src="https://i.ibb.co/RcRXNtt/vdd2105.jpg" alt="Imagem do Versículo do Dia">
-                <p>Muitas vezes temos vontade de desistir, de largar tudo e sumir. Da vontade de ir a um lugar distante e longe de todos, pois os problemas crescem diante de nós, não encontramos soluções e nos desesperamos diante de algumas situações. Contudo Jesus Cristo, nosso Senhor e Salvador, vem com seu amor incondicional, e nos fala: Ei, filho, filha, Eu estou aqui. Eu sou a luz do mundo, Eu sou a luz da sua vida, e a trevas, que são os seus problemas, já não existem mais, porque onde existe luz, não há trevas. Eu sou a luz da vida, da sua vida. Entregue seus problemas para mim, descanse! Eu sou a solução dos seus problemas, Eu venci o mundo, você também vencerá. Levante a sua cabeça, erga seus ombros, olhe para frente: Eu sou contigo! Acredite! Eu sou a luz do mundo, Eu sou a sua luz, Eu sou a luz da sua vida! Eu te amo! Tenha fé!</p>
-                <p>Por: <span>Odamarion</span></p>
+            <section id="daily-devotional">
+                <h3 class="devotional-section-title">Devocional</h3>
+                <img src="https://i.ibb.co/2vbp0J7/pessoa-meditando-na-palavra.png" alt="">
+                <p>
+                    <i class="fa-solid fa-quote-left"></i>
+                    <?php print $row->textVerseOfTheDay; ?>
+                    <i class="fa-solid fa-quote-right"></i>
+                </br>
+                    <span> <i class="fa-solid fa-book-bible"></i> <?php print $row->bibleBook; ?> - <?php print $row->bibleVersion; ?></span>
+                </p>
+                <p><?php print $row->dailyDevotionalText; ?></p>
             </section>
         </main>
         <footer>
@@ -93,6 +105,6 @@
         </footer>
 
         <!-- import javascript -->
-        <script src="assets/js/script.js?v=30"></script>
+        <script src="assets/js/script.js?v=001"></script>
     </body>
 </html>

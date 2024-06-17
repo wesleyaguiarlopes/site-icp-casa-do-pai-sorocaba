@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!-- open graph -->
+
+        <!-- open graph - update verse of the day and daily devotional -->
+        <meta property="og:title" content="Atualizar Versículo e Devocional">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://www.comunhaoplenasorocaba.com.br/atualizar-devocional">
+        <meta property="og:description" content="Formulário para atulizar o Versículo do Dia e Devocional Diário">
+        <meta property="og:site_name" content="ICP Casa do Pai Sorocaba">
+        <meta property="og:image" content="/assets/images/open-graph/open-graph_update-devotional-verse.jpg">
+
+        <!-- import -->
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css?v=30">
+        <link rel="stylesheet" type="text/css" href="assets/css/responsive.css?v=30">
+
+        <!-- browser visual settings -->
+        <link rel="icon" type="image/x-icon" href="assets/images/logotipo/logo_icon_icp-casa-do-pai.ico">
+        <title>Atualizar Versículo & Devocional</title>
+        <meta name="description" content="Formulário para atualização diária do Versículo do Dia e Devocional Diário">
+
+        <!-- browser background settings -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- search engines - SEO -->
+        <meta name="robots" content="no-index, no-follow">
+        <meta name="rating" content="general">
+
+        <!-- additional information -->
+        <meta name="copyright" content="© 2024 Igreja Comunhão Plena">
+        <meta name="author" content="Evandro Lopes">
+        <meta name="author" content="Wesley Lopes">
+
+        <!-- import CDN icons -->
+        <script src="https://kit.fontawesome.com/d5ee391d5f.js" crossorigin="anonymous"></script>
+
+        <!-- import CDN jquery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </head>
+    <body>
+        <header class="navigation-menu">
+            <div class="container-menu limit-width">
+                <div class="container-logo">
+                    <a href="https://www.comunhaoplenasorocaba.com.br">
+                        <img class="logo" src="assets/images/logotipo/logo_icp-casa-do-pai.png" alt="Logo da ICP Casa do Pai" title="ICP Casa do Pai Sorocaba">
+                    </a>
+                </div>
+                <nav class="nav-bar">
+                    <ul>
+                        <li class="nav-items"><a href="https://www.comunhaoplenasorocaba.com.br">início</a></li>
+                        <li class="nav-items"><a href="#cultos">cultos</a></li>
+                        <li class="nav-items"><a href="#galeria-de-fotos">fotos</a></li>
+                        <li class="nav-items"><a href="#pedido-de-oracao">oração</a></li>
+                        <li class="nav-items"><a href="#contribuir">contribuir</a></li>
+                        <li class="nav-items"><a href="#local">endereço</a></li>
+                    </ul>
+                </nav>
+                <div class="social-bar">
+                    <a class="icon-facebook" href="https://www.facebook.com/comunhaoplenasorocaba" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a class="icon-instagram" href="https://www.instagram.com/comunhaoplenasorocaba" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a class="icon-whatsapp" href="https://wa.me/5515996569553" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <button class="mobile-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+            <div class="mobile-nav-bar">
+                <ul>
+                    <li class="mobile-nav-items border-bottom"><a href="https://www.comunhaoplenasorocaba.com.br">início</a></li>
+                    <li class="mobile-nav-items border-bottom"><a href="#cultos">cultos</a></li>
+                    <li class="mobile-nav-items border-bottom"><a href="#galeria-de-fotos">fotos</a></li>
+                    <li class="mobile-nav-items border-bottom"><a href="#pedido-de-oracao">pedir oração</a></li>
+                    <li class="mobile-nav-items border-bottom"><a href="#contribuir">contribuir</a></li>
+                    <li class="mobile-nav-items border-bottom"><a href="#local">onde estamos</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <main id="content">
+            <section id="update-devotional-verse">
+                <form action="/assets/php/update-devotional-verse.php" method="POST">
+                    <h2 class="title">Atualizar</h2>
+                    <h3 class="subtitle">Versículo e Devocional</h3>
+                    <div class="guidelines">
+                        <p>Utilize este formulário, para atualizar o <span>Versículo do Dia</span> e <span>Devocional Diário</span></p>
+                        <p>O que for atualizado por aqui, será imediatamente refletido no site que está no ar. <span>Observe todo o texto antes de enviar!</span>. Se por acidente enviou com erros, reenvie novamente todas as informações para atualizar.</p>
+                    </div>
+                    <div class="group">
+                        <div class="items-form">
+                            <label for="bible-book">Livro - Capítulo - Versículo
+                                <span class="asterisk">*</span>
+                            </label>
+                            <input type="text" name="bible-book" placeholder="Informe o Livro - Ex: João 10:10-12" required>
+                        </div>
+                        <div class="items-form">
+                            <label for="bible-version">Versão do texto do Versículo
+                                <span class="asterisk">*</span>
+                            </label>
+                            <select name="bible-version" required>
+                                <option value="">Selecione a Versão</option>
+                                <option value="ARA">ARA - Almeida Revista e Atualizada</option>
+                                <option value="ARC">ARC - Almeida Revista e Corrigida</option>
+                                <option value="NTLH">NTLH - Nova Tradução na Linguagem de Hoje</option>
+                                <option value="NVI">NVI - Nova Versão Internacional</option>
+                                <option value="NVT">NVT - Nova Versão Transformadora</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="container-msg">
+                        <label for="text-verse-of-the-day">Versículo do Dia
+                            <span class="asterisk">*</span>
+                        </label>
+                        <textarea name="text-verse-of-the-day" rows="5" placeholder="Digite aqui o texto do Versículo do Dia..." required></textarea>
+                    </div>
+                    <div class="container-msg">
+                        <label for="daily-devotional-text">Devocional Diário
+                            <span class="asterisk">*</span>
+                        </label>
+                        <textarea name="daily-devotional-text" rows="15" placeholder="Digite aqui o texto do Devocional de hoje..." required></textarea>
+                    </div>
+                    <div class="btn-form">
+                        <button type="submit" name="btn_update-devotional-verse" title="Clique para Atualizar o Versículo do Dia e o Devocional Diário">
+                            <i class="fa-solid fa-rotate-right"></i>
+                            Atualizar
+                        </button>
+                        <button type="reset" title="Clique para Limpar os Campos">
+                            <i class="fa-solid fa-broom"></i>
+                            Limpar Campos
+                        </button>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>Copyright © 2024 ICP Casa do Pai Sorocaba</p>
+        </footer>
+
+        <!-- import javascript -->
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>

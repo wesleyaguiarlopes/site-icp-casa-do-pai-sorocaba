@@ -1,19 +1,27 @@
+<?php
+    $con = mysqli_connect("localhost", "u267143979_icpsorocaba", "EliasMaluf1402@", "u267143979_db_icpsorocaba");
+    $sql = "select * from tb_devotionalverse where 1";
+    $resultado = $con->query($sql);
+    $row = $resultado->fetch_object();
+    $rs = mysqli_query($con, $sql);
+    mysqli_close($con);
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
         <!-- open graph -->
 
-        <!-- og - pedido de oracão -->
+        <!-- og - home page -->
         <meta property="og:title" content="ICP Casa do Pai Wanel Ville Sorocaba">
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://www.comunhaoplenasorocaba.com.br">
         <meta property="og:description" content="Aqui é a casa do Pai!">
         <meta property="og:site_name" content="ICP Casa do Pai Sorocaba">
-        <meta property="og:image" content="https://i.ibb.co/cbqGtYX/og-icp-sorocaba-home.png">
+        <meta property="og:image" content="assets/images/open-graph/open-graph_icp-sorocaba.jpg">
 
         <!-- import -->
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css?v=30">
-        <link rel="stylesheet" type="text/css" href="assets/css/responsive.css?v=30">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css?v=001">
+        <link rel="stylesheet" type="text/css" href="assets/css/responsive.css?v=001">
 
         <!-- browser visual settings -->
         <link rel="icon" type="image/x-icon" href="assets/images/logotipo/logo_icon_icp-casa-do-pai.ico">
@@ -108,8 +116,8 @@
             <section id="verse-day">
                 <div class="container">
                     <h3 class="title">Versículo do dia</h3>
-                    <p class="text">De novo, lhes falava Jesus, dizendo: Eu sou a luz do mundo; quem me segue não andará nas trevas; pelo contrário, terá a luz da vida.</p>
-                    <p class="book-chapter-verse">João 8:12<span class="version"> ARA</span></p>
+                    <p class="text"><i class="fa-solid fa-quote-left"></i> <?php print $row->textVerseOfTheDay; ?> <i class="fa-solid fa-quote-right"></i></p>
+                    <p class="book-chapter-verse"><?php print $row->bibleBook; ?><span class="version">  <?php print $row->bibleVersion; ?></span></p>
                     <a class="btn-devotional" href="https://www.comunhaoplenasorocaba.com.br/devocional">ler o devocional<i class="fa-solid fa-arrow-right fa-fade"></i></a>
                 </div>
             </section>
@@ -123,7 +131,7 @@
                         <img src="assets/images/banner_campaigns-and-cults/2024/banner_prophetic-thursday.jpeg" alt="banner Quarta profética">
                     </div>
                     <div class="cults-content">
-                        <img src="assets/images/banner_campaigns-and-cults/2024/banner_strong-friday.jpeg" alt="banner Sexta-feira Forte">
+                        <img src="assets/images/banner_campaigns-and-cults/2024/banner_strong-friday-curse-breaker.jpeg" alt="banner Sexta-feira Forte">
                     </div>
                 </div>
             </section>
@@ -582,6 +590,6 @@
         </footer>
 
         <!-- import javascript -->
-        <script src="assets/js/script.js?v=30"></script>
+        <script src="assets/js/script.js?v=001"></script>
     </body>
 </html>
