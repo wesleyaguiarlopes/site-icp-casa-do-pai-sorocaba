@@ -402,17 +402,9 @@ body {
 /* section photo-gallery */
 
 #galeria-de-fotos {
-    height: 100vh;
-    padding: 68px 0;
+    padding: 18px 0 68px 0;
     border-radius: 0 0 30px 30px;
-    background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
-
-    .section-title {
-        font-size: 30px;
-        font-weight: bold;
-        text-align: center;
-        color: var(--color-level3);
-    }
+    background-image: linear-gradient(to top, #0f60a7 0%, #473B7B 100%);
 
     .content {
         padding: 0 10px;
@@ -420,7 +412,6 @@ body {
         align-items: center;
         flex-wrap: wrap;
         gap: 10px;
-        height: 95%;
 
         .wrapper {
             display: flex;
