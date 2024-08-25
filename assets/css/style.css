@@ -176,7 +176,7 @@ body {
 /* section banner */
 
 #home {
-    background-image: url(/assets/images/banner-sky.jpg);
+    background-image: url('../images/banner-sky.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -364,7 +364,7 @@ body {
 /* section cults */
 
 #cultos {
-    background-image: url(/assets/images/wallpaper/wallpaper-2-opacity-40.png);
+    background-image: url('../images/wallpaper/wallpaper-2-opacity-40.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -742,7 +742,7 @@ body {
 /* section team icp */
 
 #team {
-    background-image: url(/assets/images/wallpaper/wallpaper-1.png);
+    background-image: url('../images/wallpaper/wallpaper-1.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -769,7 +769,7 @@ body {
 #pedido-de-oracao {
     height: 100vh;
     color: var(--color-level3);
-    background-image: url(../images/wallpaper/wallpaper-3.jpg);
+    background-image: url('../images/wallpaper/wallpaper-3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -1197,7 +1197,7 @@ footer {
 
 #update-devotional-verse {
     color: var(--color-level3);
-    background-image: url(/assets/images/devotional-verse/person-meditating-on-the-word.jpg);
+    background-image: url('../images/devotional-verse/person-meditating-on-the-word.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
