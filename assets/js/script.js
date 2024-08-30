@@ -14,6 +14,20 @@ $(document).ready(function() {
     });
 });
 
+// Dialog home
+
+const btnTextApostolicYear = document.querySelector('.btn-text-apostolic-year');
+const dgTextApostolicYear = document.querySelector('#dg-text-apostolic-year');
+const btnCloseTextApostolicYear = document.querySelector('.btn-closed-text-apostolic-year');
+
+btnTextApostolicYear.onclick = function() {
+    dgTextApostolicYear.showModal();
+}
+
+btnCloseTextApostolicYear.onclick = function() {
+    dgTextApostolicYear.close();
+}
+
 // copy the pix key to the clipboard
 
 function copy(){

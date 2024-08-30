@@ -20,9 +20,10 @@
         <meta property="og:image" content="https://i.ibb.co/4dSq0c1/open-graph-icp-sorocaba.webp">
 
         <!-- import -->
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css?v=002">
-        <link rel="stylesheet" type="text/css" href="assets/css/responsive.css?v=002">
-        <link rel="stylesheet" type="text/css" href="assets/css/photo-gallery.css?v=002">
+        <link rel="stylesheet" type="text/css" href="assets/css/home.css?v=003">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css?v=003">
+        <link rel="stylesheet" type="text/css" href="assets/css/responsive.css?v=003">
+        <link rel="stylesheet" type="text/css" href="assets/css/photo-gallery.css?v=003">
 
         <!-- browser visual settings -->
         <link rel="icon" type="image/x-icon" href="assets/images/logotipo/logo_icon_icp-casa-do-pai.ico">
@@ -88,31 +89,27 @@
             </div>
         </header>
         <main id="content">
-            <section id="home" class="section-default">
-                <div id="acrylic-background">
-                    <div id="call-to-action">
-                        <h2 class="title">
-                            <span class="church">ICP</span>
-                            <span class="communion">Casa do Pai</span>
-                            <span class="full"></span>
-                            <span class="city">Sorocaba</span>
-                        </h2>
-                        <p class="slogan">Aqui é a casa do Pai</p>
-                    </div>
-                    <div id="banner">
-                        <h2 class="title">
-                            <span class="year">2024</span>
-                            <span class="phrase">o ano apostólico de</span>
-                            <span class="year-theme">Pentecostes</span>
-                            <i class="pigeon fa-solid fa-dove"></i>
-                        </h2>
-                        <p class="theme-verse">... todos ficaram cheios do Espírito Santo e começaram a falar em outras línguas ... Atos 2:4 NVT</p>
-                        <a class="btn-bible" href="https://www.bible.com/pt/bible/1930/ACT.2.1-4" target="_blank">
-                            <i class="fa-solid fa-book-bible"></i>
-                            ler na bíblia
-                        </a>
-                    </div>
-                </div>
+            <section id="home" class="overlay">
+                <h1 class="church-name-and-apostolic-year">
+                    <span class="church-name-old">ICP</span>
+                    <span class="church-name">Casa do Pai</span>
+                    <span class="city">Sorocaba</span>
+                    <span>, vivendo o</span></br>
+                    <span class="apostolic-year">ano apostólico de <span class="keyword">Pentecostes</span></span>
+                </h1>
+                <p class="text-apostolic-year">... todos ficaram cheios do Espírito Santo e começaram a falar em outras línguas ... Atos 2:4 NVT</p>
+                <button class="btn-text-apostolic-year">
+                    <i class="fa-solid fa-book-bible"></i>
+                    Ler <span>Atos 2 : 1 ao 4</span>
+                </button>
+                <dialog id="dg-text-apostolic-year">
+                    <button class="btn-closed-text-apostolic-year"><i class="fa-solid fa-xmark"></i></button>
+                    <h2>Atos 2:1-4 NVT</h2>
+                    <p><span>1 - </span>No dia de Pentecostes, todos estavam reunidos num só lugar.</p>
+                    <p><span>2 - </span>De repente, veio do céu um som como o de um poderoso vendaval e encheu a casa onde estavam sentados.</p>
+                    <p><span>3 - </span>Então surgiu algo semelhante a chamas ou línguas de fogo que pousaram sobre cada um deles.</p>
+                    <p><span>4 - </span>Todos ficaram cheios do Espírito Santo e começaram a falar em outras línguas, conforme o Espírito os habilitava.</p>
+                </dialog>
             </section>
             <section id="verse-day">
                 <div class="container">
@@ -704,6 +701,6 @@
         </footer>
 
         <!-- import javascript -->
-        <script src="assets/js/script.js?v=002"></script>
+        <script src="assets/js/script.js?v=003"></script>
     </body>
 </html>
