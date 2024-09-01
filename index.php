@@ -129,7 +129,7 @@
                         <img src="assets/images/banner_campaigns-and-cults/2024/banner_prophetic-thursday.jpeg" alt="banner Quarta profética">
                     </div>
                     <div class="cults-content">
-                        <img src="assets/images/banner_campaigns-and-cults/2024/banner_strong-friday-curse-breaker.jpeg" alt="banner Sexta-feira Forte">
+                        <img src="assets/images/banner_campaigns-and-cults/2024/banner_strong-friday.jpeg" alt="banner Sexta-feira Forte">
                     </div>
                 </div>
             </section>
