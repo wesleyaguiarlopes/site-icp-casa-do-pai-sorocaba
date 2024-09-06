@@ -90,13 +90,10 @@
         </header>
         <main id="content">
             <section id="home" class="overlay">
-                <h1 class="church-name-and-apostolic-year">
-                    <span class="church-name-old">ICP</span>
-                    <span class="church-name">Casa do Pai</span>
-                    <span class="city">Sorocaba</span>
-                    <span>, vivendo o</span></br>
-                    <span class="apostolic-year">ano apostólico de <span class="keyword">Pentecostes</span></span>
-                </h1>
+                <div class="church-name-and-apostolic-year">
+                    <h1 class="church-name"><span>ICP</span> Casa do Pai <span>Sorocaba</span></h1>
+                    <h2 class="apostolic-year"><span>ano apostólico de</span> Pentecostes</h2>
+                </div>
                 <p class="text-apostolic-year">... todos ficaram cheios do Espírito Santo e começaram a falar em outras línguas ... Atos 2:4 NVT</p>
                 <button class="btn-text-apostolic-year">
                     <i class="fa-solid fa-book-bible"></i>
