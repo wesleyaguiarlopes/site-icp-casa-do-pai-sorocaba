@@ -40,44 +40,12 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     </head>
     <body>
-        <header class="navigation-menu">
-            <div class="container-menu limit-width">
-                <div class="container-logo">
-                    <a href="https://www.comunhaoplenasorocaba.com.br">
-                        <img class="logo" src="assets/images/logotipo/logo_icp-casa-do-pai.png" alt="Logo da ICP Casa do Pai" title="ICP Casa do Pai Sorocaba">
-                    </a>
-                </div>
-                <nav class="nav-bar">
-                    <ul>
-                        <li class="nav-items"><a href="https://www.comunhaoplenasorocaba.com.br">início</a></li>
-                        <li class="nav-items"><a href="#cultos">cultos</a></li>
-                        <li class="nav-items"><a href="#galeria-de-fotos">fotos</a></li>
-                        <li class="nav-items"><a href="#pedido-de-oracao">oração</a></li>
-                        <li class="nav-items"><a href="#contribuir">contribuir</a></li>
-                        <li class="nav-items"><a href="#local">endereço</a></li>
-                    </ul>
-                </nav>
-                <div class="social-bar">
-                    <a class="icon-facebook" href="https://www.facebook.com/comunhaoplenasorocaba" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
-                    <a class="icon-instagram" href="https://www.instagram.com/comunhaoplenasorocaba" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a class="icon-whatsapp" href="https://wa.me/5515996569553" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-                </div>
-                <button class="mobile-menu">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-            </div>
-            <div class="mobile-nav-bar">
-                <ul>
-                    <li class="mobile-nav-items border-bottom"><a href="https://www.comunhaoplenasorocaba.com.br">início</a></li>
-                    <li class="mobile-nav-items border-bottom"><a href="#cultos">cultos</a></li>
-                    <li class="mobile-nav-items border-bottom"><a href="#galeria-de-fotos">fotos</a></li>
-                    <li class="mobile-nav-items border-bottom"><a href="#pedido-de-oracao">pedir oração</a></li>
-                    <li class="mobile-nav-items border-bottom"><a href="#contribuir">contribuir</a></li>
-                    <li class="mobile-nav-items border-bottom"><a href="#local">onde estamos</a></li>
-                </ul>
-            </div>
+        <header id="navigation-menu">
+            <!-- Includes the header -->
+             <?php
+                include 'assets/php/include/header.php';
+            ?>
         </header>
-
         <main id="content">
             <section id="update-devotional-verse">
                 <form action="/assets/php/update-devotional-verse.php" method="POST">
