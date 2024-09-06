@@ -890,18 +890,6 @@ body {
     }
 }
 
-/* footer */
-
-footer {
-    background-color: var(--color-level2);
-    width: 100%;
-    color: var(--color-level3);
-    height: 100px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-}
-
 /* daily devotional page - devocional.html */
 
 #daily-devotional {

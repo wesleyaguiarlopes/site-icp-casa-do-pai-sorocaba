@@ -70,7 +70,10 @@
             </section>
         </main>
         <footer>
-            <p>Copyright © 2024 ICP Casa do Pai Sorocaba</p>
+            <!-- Includes the footer -->
+             <?php
+                include 'assets/php/include/footer.php';
+            ?>
         </footer>
 
         <!-- import javascript -->
