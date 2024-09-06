@@ -1,8 +1,14 @@
-# as 4 linhas abaixo, foram necessárias para remover as extensões .html dos arquivos na URL
+# Ativa o mecanismo de reescrista
 RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-d
+
+# ocultar extensão *.html da url
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)$ $1.html
+
+# ocultar extensão *.php da url
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php
 
 # com a linha abaixo, o código php pode ser executado dentro de um arquivo .html, não sendo necessário converter o arquivo para .php
 AddHandler application/x-httpd-lsphp .htm .html
