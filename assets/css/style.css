@@ -483,7 +483,7 @@ body {
 .team-icp img {
     height: 70vh;
     border-radius: 10px;
-    box-shadow: 10px 10px 600px #000;
+    /* box-shadow: 10px 10px 600px #000; */
 }
 
 /* section prayer request */
