@@ -17,7 +17,7 @@
 
         <!-- browser visual settings -->
         <link rel="icon" type="image/x-icon" href="assets/images/logotipo/logo_icon_icp-casa-do-pai.ico">
-        <title>Atualizar Versículo & Devocional</title>
+        <title>Atualizar Versículo & Devocional | ICP Casa do Pai Sorocaba</title>
         <meta name="description" content="Formulário para atualização diária do Versículo do Dia e Devocional Diário">
 
         <!-- browser background settings -->

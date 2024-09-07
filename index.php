@@ -27,7 +27,7 @@
 
         <!-- browser visual settings -->
         <link rel="icon" type="image/x-icon" href="assets/images/logotipo/logo_icon_icp-casa-do-pai.ico">
-        <title>ICP Sorocaba - Wanel Ville</title>
+        <title>ICP Casa do Pai Sorocaba</title>
         <meta name="description" content="Igreja Comunhão Plena Wannel Ville, na cidade de Sorocaba, propagando o evangelho a toda criatura, para que vivam uma vida plena com Deus nas 7 áreas">
 
         <!-- browser background settings -->

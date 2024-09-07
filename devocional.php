@@ -21,7 +21,7 @@
 
         <!-- browser visual settings -->
         <link rel="icon" type="image/x-icon" href="assets/images/logotipo/logo_icon_icp-casa-do-pai.ico">
-        <title>Devocional | ICP Casa do Pai</title>
+        <title>Devocional | ICP Casa do Pai Sorocaba</title>
         <meta name="description" content="Seja edificado com a palavra, através do devocional que preparamos para você">
 
         <!-- browser background settings -->
