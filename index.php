@@ -85,7 +85,7 @@
                     <h3 class="title">Versículo do dia</h3>
                     <p class="text"><i class="fa-solid fa-quote-left"></i> <?php print $row->textVerseOfTheDay; ?> <i class="fa-solid fa-quote-right"></i></p>
                     <p class="book-chapter-verse"><?php print $row->bibleBook; ?><span class="version">  <?php print $row->bibleVersion; ?></span></p>
-                    <a class="btn-devotional" href="https://www.comunhaoplenasorocaba.com.br/devocional">ler o devocional<i class="fa-solid fa-arrow-right fa-fade"></i></a>
+                    <a class="btn-devotional" href="devocional">ler o devocional<i class="fa-solid fa-arrow-right fa-fade"></i></a>
                 </div>
             </section>
             <section id="cultos">
