@@ -1,11 +1,3 @@
-:root {
-    /* color palette */
-    --color-level0: #565656;
-    --color-level1: #0f60a7;
-    --color-level2: #5E88BA;
-    --color-level3: #fefefe;
-}
-
 body {
     background-color: var(--color-level3);
     color: var(--color-level0);

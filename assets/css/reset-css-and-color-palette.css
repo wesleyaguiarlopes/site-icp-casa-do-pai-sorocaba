@@ -10,3 +10,17 @@
     /* default font */
     font-family: 'poppins', sans-serif;
 }
+
+:root {
+    /* color palette */
+    --color-level0: #565656;
+    --color-level1: #0f60a7;
+    --color-level2: #5E88BA;
+    --color-level3: #fefefe;
+}
+
+.limit-width {
+    width: 100%;
+    padding: 0 30px;
+    margin: 0 auto;
+}
