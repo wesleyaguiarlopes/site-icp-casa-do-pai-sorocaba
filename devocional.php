@@ -39,8 +39,11 @@
         <meta name="author" content="Wesley Lopes">
 
         <!-- import -->
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css?v=002">
-        <link rel="stylesheet" type="text/css" href="assets/css/responsive.css?v=002">
+        <link rel="stylesheet" type="text/css" href="assets/css/reset-css-and-color-palette.css?v=005">
+        <link rel="stylesheet" type="text/css" href="assets/css/header.css?v=005">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css?v=005">
+        <link rel="stylesheet" type="text/css" href="assets/css/responsive.css?v=005">
+        <link rel="stylesheet" type="text/css" href="assets/css/footer.css?v=005">
 
         <!-- import CDN icons -->
         <script src="https://kit.fontawesome.com/d5ee391d5f.js" crossorigin="anonymous"></script>
@@ -77,6 +80,6 @@
         </footer>
 
         <!-- import javascript -->
-        <script src="assets/js/script.js?v=002"></script>
+        <script src="assets/js/script.js?v=005"></script>
     </body>
 </html>

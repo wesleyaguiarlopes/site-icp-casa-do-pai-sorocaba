@@ -12,8 +12,11 @@
         <meta property="og:image" content="https://i.ibb.co/BPK6rCm/open-graph-update-devotional-verse.webp">
 
         <!-- import -->
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css?v=002">
-        <link rel="stylesheet" type="text/css" href="assets/css/responsive.css?v=002">
+        <link rel="stylesheet" type="text/css" href="assets/css/reset-css-and-color-palette.css?v=005">
+        <link rel="stylesheet" type="text/css" href="assets/css/header.css?v=005">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css?v=005">
+        <link rel="stylesheet" type="text/css" href="assets/css/responsive.css?v=005">
+        <link rel="stylesheet" type="text/css" href="assets/css/footer.css?v=005">
 
         <!-- browser visual settings -->
         <link rel="icon" type="image/x-icon" href="assets/images/logotipo/logo_icon_icp-casa-do-pai.ico">
@@ -106,6 +109,6 @@
         </footer>
 
         <!-- import javascript -->
-        <script src="assets/js/script.js?v=002"></script>
+        <script src="assets/js/script.js?v=005"></script>
     </body>
 </html>
