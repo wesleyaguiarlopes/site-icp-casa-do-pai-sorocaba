@@ -73,11 +73,11 @@
                 </button>
                 <dialog id="dg-text-apostolic-year">
                     <button class="btn-closed-text-apostolic-year"><i class="fa-solid fa-xmark"></i></button>
-                    <h2>Atos 2:1-4 NVT</h2>
-                    <p><span>1 - </span>No dia de Pentecostes, todos estavam reunidos num só lugar.</p>
-                    <p><span>2 - </span>De repente, veio do céu um som como o de um poderoso vendaval e encheu a casa onde estavam sentados.</p>
-                    <p><span>3 - </span>Então surgiu algo semelhante a chamas ou línguas de fogo que pousaram sobre cada um deles.</p>
-                    <p><span>4 - </span>Todos ficaram cheios do Espírito Santo e começaram a falar em outras línguas, conforme o Espírito os habilitava.</p>
+                    <h2 class="book-chapter-verse-version">Atos 2:1-4 NVT</h2>
+                    <p class="verse"><span class="verse-number">1 - </span>No dia de Pentecostes, todos estavam reunidos num só lugar.</p>
+                    <p class="verse"><span class="verse-number">2 - </span>De repente, veio do céu um som como o de um poderoso vendaval e encheu a casa onde estavam sentados.</p>
+                    <p class="verse"><span class="verse-number">3 - </span>Então surgiu algo semelhante a chamas ou línguas de fogo que pousaram sobre cada um deles.</p>
+                    <p class="verse"><span class="verse-number">4 - </span>Todos ficaram cheios do Espírito Santo e começaram a falar em outras línguas, conforme o Espírito os habilitava.</p>
                 </dialog>
             </section>
             <section id="verse-day">
