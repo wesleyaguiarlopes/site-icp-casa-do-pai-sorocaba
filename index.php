@@ -575,7 +575,7 @@
                     <input type="hidden" name="_subject" value="Novo Pedido de Oração através do Site">
                     <input type="hidden" name="_template" value="table">
                     <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_next" value="https://www.comunhaoplenasorocaba.com.br/pedido-de-oracao/enviado">
+                    <input type="hidden" name="_next" value="enviado">
                 </form>
             </section>
             <section id="contribuir" class="section-default">
