@@ -99,7 +99,7 @@
                     </div>
                 </div>
             </section>
-            <section id="encontro-de-casais">
+            <section id="nossas-fotos">
                 <h3 class="section-gallery-title">Galeria de Fotos</h3>
                 <div id="gallery-primary">
                     <figcaption class="photo-caption">29.06.2024 - Encontro de Casais ❤️</figcaption>

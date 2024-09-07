@@ -1,4 +1,4 @@
-#encontro-de-casais {
+#nossas-fotos {
     padding: 68px 5px 18px;
     z-index: -1;
     background-image: linear-gradient(to top, #473B7B 0%, #5E88BA 100%);
@@ -212,7 +212,7 @@
 }
 
 @media(max-width: 820px){
-    #encontro-de-casais {
+    #nossas-fotos {
 
         #gallery-primary {
 
@@ -226,7 +226,7 @@
 }
 
 @media(max-width: 620px){
-    #encontro-de-casais {
+    #nossas-fotos {
 
         #gallery-primary {
 
@@ -253,7 +253,7 @@
 }
 
 @media(max-width: 420px){
-    #encontro-de-casais {
+    #nossas-fotos {
 
         #gallery-primary {
 
