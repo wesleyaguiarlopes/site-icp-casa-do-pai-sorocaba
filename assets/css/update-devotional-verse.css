@@ -1,0 +1,167 @@
+#content {
+    display: flex;
+    min-height: calc(100vh - 148px);
+
+    #update-devotional-verse {
+        color: var(--color-level3);
+        background-image: url('../images/devotional-verse/person-meditating-on-the-word.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        padding-top: 105px;
+        padding-bottom: 15px;
+        flex: 1 1 0;
+        
+        .update-form {
+            max-width: 700px;
+            margin: auto;
+            border-radius: 10px;
+            background-color: #0000005e;
+            padding: 10px 50px;
+            font-size: 13px;
+    
+            div {
+                padding: 5px;
+            }
+    
+            input, select, textarea {
+                border: none;
+                border-radius: 10px;
+                padding: 10px;
+            }
+    
+            input::placeholder,
+            textarea::placeholder {
+                color: #cecece;
+            }
+    
+            span {
+                color: #fec66d;
+            }
+        
+            .asterisk {
+                color: red;
+            }
+    
+            .title {
+                font-size: 25px;
+            }
+        
+            .subtitle {
+                margin-top: -6px;
+                font-size: 20px;
+            }
+            
+            .title, .subtitle {
+                font-weight: normal;
+                text-align: center;
+            }
+            
+            .guidelines {
+                text-align: center;
+                
+                p {
+                    margin: 10px;
+                }
+            }
+            
+            .group {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                margin: 0 auto;
+                width: 93%;
+                padding: 0;
+    
+                .items-form {
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                }
+    
+                .author {
+                    width: 100%;
+                }
+            }
+    
+            .container-msg {
+                display: flex;
+                flex-direction: column;
+                width: 93%;
+                margin: 0 auto;
+            }
+    
+            .btn-form {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                padding: 20px;
+    
+                button {
+                    background-color: var(--color-level1);
+                    border: none;
+                    color: var(--color-level3);
+                    padding: 10px;
+                    border-radius: 10px;
+            
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                }
+    
+                button:hover {
+                    background-color: #3171a8;
+                }
+    
+                i {
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+    
+    @media (max-width: 836px) {
+    
+        #update-devotional-verse {
+            .update-form {
+                .group {
+                    flex-direction: column;
+        
+                    .items-form {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    
+    @media (max-width: 740px) {
+        #update-devotional-verse {
+            padding-top: 85px;
+            background-attachment: scroll;
+            background-position: left;
+        }
+    }
+    
+    @media (max-width: 620px) {
+    
+        #update-devotional-verse {
+            .update-form {
+                padding: 0;
+        
+                .btn-form {
+                    button {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+    
+    @media (max-height: 820px) {
+    
+        #update-devotional-verse {
+            height: auto;
+        }
+    }
+}

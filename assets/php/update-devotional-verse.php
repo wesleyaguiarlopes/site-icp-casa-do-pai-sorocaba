@@ -1,17 +1,18 @@
 <?php
     // As variáveis recebem os valores inseridos nos campos do formulário da página https://www.comunhaoplenasorocaba.com.br/atualizar-devocional
-    if(isset($_POST['btn_update-devotional-verse'])) {
+    if(isset($_POST['btn-update-devotional-verse'])) {
         $bibleBook = $_POST['bible-book'];
         $bibleVersion = $_POST['bible-version'];
         $textVerseOfTheDay = $_POST['text-verse-of-the-day'];
         $dailyDevotionalText = $_POST['daily-devotional-text'];
+        $authorName = $_POST['author-name'];
     }
 
-    // os parâmetros para conexão com o banco de dados são informados na variável
-    $con = mysqli_connect("localhost", "u267143979_icpsorocaba", "EliasMaluf1402@", "u267143979_db_icpsorocaba");
+    // inclui a conexão com o banco de dados
+    include_once 'database-connection.php';
     
     // query para atualizar os dados da tabela
-    $sql = "UPDATE `tb_devotionalverse` SET `id`='1',`bibleBook`='$bibleBook',`bibleVersion`='$bibleVersion',`textVerseOfTheDay`='$textVerseOfTheDay',`dailyDevotionalText`='$dailyDevotionalText' WHERE id = '1'";
+    $sql = "UPDATE `tb_devotionalverse` SET `id`='1',`bibleBook`='$bibleBook',`bibleVersion`='$bibleVersion',`textVerseOfTheDay`='$textVerseOfTheDay',`dailyDevotionalText`='$dailyDevotionalText',`authorName`='$authorName' WHERE id = '1'";
 
     // realiza a conexão, após a query de atualização dos dados
     $rs = mysqli_query($con, $sql);
@@ -21,15 +22,15 @@
         // emite um alerta de sucesso e direciona para a página de atualização novamente
         echo "
         <script>
-            alert('Versículo do Dia e Devocional Diário atualizados com Sucesso! :D - Vamos para o site principal, OK?');
-            location.href='https://www.comunhaoplenasorocaba.com.br';
+            alert('Versículo do Dia e Devocional Diário atualizados com Sucesso! :D! Vamos para a Página Incial, OK?');
+            location.href='/';
         </script> ";
     } else {
-        // emite um alerta de não sucesso e direciona para a página de atualização novamente
+        // emite um alerta de não sucesso e retorna para a página de atualização novamente
         echo "
         <script>
-            alert('Não foi possível atualizar! Envie um print para o administrador!');
-            location.href='https://www.comunhaoplenasorocaba.com.br/atualizar-devocional';
+            alert('Não foi possível atualizar! Atualize novamente');
+            // location.href='../../atualizar-devocional';
         </script> ";
     }
 

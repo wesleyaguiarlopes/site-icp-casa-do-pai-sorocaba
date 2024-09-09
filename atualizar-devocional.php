@@ -14,8 +14,7 @@
         <!-- import -->
         <link rel="stylesheet" type="text/css" href="assets/css/reset-css-and-color-palette.css?v=005">
         <link rel="stylesheet" type="text/css" href="assets/css/header.css?v=005">
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css?v=005">
-        <link rel="stylesheet" type="text/css" href="assets/css/responsive.css?v=005">
+        <link rel="stylesheet" type="text/css" href="assets/css/update-devotional-verse.css?v=005">
         <link rel="stylesheet" type="text/css" href="assets/css/footer.css?v=005">
 
         <!-- browser visual settings -->
@@ -51,7 +50,7 @@
         </header>
         <main id="content">
             <section id="update-devotional-verse">
-                <form action="/assets/php/update-devotional-verse.php" method="POST">
+                <form class="update-form" action="/assets/php/update-devotional-verse" method="POST">
                     <h2 class="title">Atualizar</h2>
                     <h3 class="subtitle">Versículo e Devocional</h3>
                     <div class="guidelines">
@@ -63,14 +62,14 @@
                             <label for="bible-book">Livro - Capítulo - Versículo
                                 <span class="asterisk">*</span>
                             </label>
-                            <input type="text" name="bible-book" placeholder="Informe o Livro - Ex: João 10:10-12" required>
+                            <input type="text" name="bible-book" placeholder="Ex: João 10:10-12" required autocomplete="off">
                         </div>
                         <div class="items-form">
                             <label for="bible-version">Versão do texto do Versículo
                                 <span class="asterisk">*</span>
                             </label>
                             <select name="bible-version" required>
-                                <option value="">Selecione a Versão</option>
+                                <option value="">Selecione a Versão Ex: ARA</option>
                                 <option value="ARA">ARA - Almeida Revista e Atualizada</option>
                                 <option value="ARC">ARC - Almeida Revista e Corrigida</option>
                                 <option value="NTLH">NTLH - Nova Tradução na Linguagem de Hoje</option>
@@ -83,16 +82,24 @@
                         <label for="text-verse-of-the-day">Versículo do Dia
                             <span class="asterisk">*</span>
                         </label>
-                        <textarea name="text-verse-of-the-day" rows="5" placeholder="Digite aqui o texto do Versículo do Dia..." required></textarea>
+                        <textarea name="text-verse-of-the-day" rows="5" placeholder="Ex: O ladrão vem somente para roubar, matar e destruir; eu vim para que tenham vida e a tenham em abundância." required autocomplete="off"></textarea>
                     </div>
                     <div class="container-msg">
                         <label for="daily-devotional-text">Devocional Diário
                             <span class="asterisk">*</span>
                         </label>
-                        <textarea name="daily-devotional-text" rows="15" placeholder="Digite aqui o texto do Devocional de hoje..." required></textarea>
+                        <textarea name="daily-devotional-text" rows="10" placeholder="Ex: Em outras palavras, o ladrão representa o falso líder religioso, os quais, semelhantemente aos fariseus que expulsaram da sinagoga ao que havia sido curado..." required autocomplete="off"></textarea>
+                    </div>
+                    <div class="group">
+                        <div class="items-form author">
+                            <label for="author-name">Autor do Devocional
+                                <span class="asterisk">*</span>
+                            </label>
+                            <input type="text" name="author-name" placeholder="Informe como quer ser reconhecido" required autocomplete="off">
+                        </div>
                     </div>
                     <div class="btn-form">
-                        <button type="submit" name="btn_update-devotional-verse" title="Clique para Atualizar o Versículo do Dia e o Devocional Diário">
+                        <button type="submit" name="btn-update-devotional-verse" title="Clique para Atualizar o Versículo do Dia e o Devocional Diário">
                             <i class="fa-solid fa-rotate-right"></i>
                             Atualizar
                         </button>
