@@ -163,7 +163,7 @@
     }
 
     .btn-admin-logoff:hover {
-        font-weight: bold;
+        font-weight: 500;
         background-color: #ff0000;
     }
 }
@@ -182,6 +182,7 @@
                     }
                 }
             }
+
             .social-bar {
                 width: 65px;
 

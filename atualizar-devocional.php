@@ -6,7 +6,6 @@
             header("Location: login");
     }
 ?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -62,10 +61,6 @@
                 <form class="update-form" action="/assets/php/update-devotional-verse" method="POST">
                     <h2 class="title">Atualizar</h2>
                     <h3 class="subtitle">Versículo e Devocional</h3>
-                    <div class="guidelines">
-                        <p>Utilize este formulário, para atualizar o <span>Versículo do Dia</span> e <span>Devocional Diário</span></p>
-                        <p>O que for atualizado por aqui, será imediatamente refletido no site que está no ar. <span>Observe todo o texto antes de enviar!</span>. Se por acidente enviou com erros, reenvie novamente todas as informações para atualizar.</p>
-                    </div>
                     <div class="group">
                         <div class="items-form">
                             <label for="bible-book">Livro - Capítulo - Versículo
@@ -97,7 +92,7 @@
                         <label for="daily-devotional-text">Devocional Diário
                             <span class="asterisk">*</span>
                         </label>
-                        <textarea name="daily-devotional-text" rows="10" placeholder="Ex: Em outras palavras, o ladrão representa o falso líder religioso, os quais, semelhantemente aos fariseus que expulsaram da sinagoga ao que havia sido curado..." required autocomplete="off"></textarea>
+                        <textarea name="daily-devotional-text" rows="5" placeholder="Ex: Em outras palavras, o ladrão representa o falso líder religioso, os quais, semelhantemente aos fariseus que expulsaram da sinagoga ao que havia sido curado..." required autocomplete="off"></textarea>
                     </div>
                     <div class="group">
                         <div class="items-form author">

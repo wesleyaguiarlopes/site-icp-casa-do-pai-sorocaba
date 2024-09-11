@@ -3,8 +3,8 @@
     min-height: calc(100vh - 148px);
 
     #update-devotional-verse {
-        color: var(--color-level3);
-        background-image: url('../images/devotional-verse/person-meditating-on-the-word.jpg');
+        color: var(--color-level0);
+        background-image: linear-gradient(to top, #254e70 0%, #5E88BA 100%);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
@@ -16,7 +16,7 @@
             max-width: 700px;
             margin: auto;
             border-radius: 10px;
-            background-color: #0000005e;
+            background-color: var(--color-level3);
             padding: 10px 50px;
             font-size: 13px;
     
@@ -28,15 +28,12 @@
                 border: none;
                 border-radius: 10px;
                 padding: 10px;
+                background-color: #f0f0f0;
             }
     
             input::placeholder,
             textarea::placeholder {
-                color: #cecece;
-            }
-    
-            span {
-                color: #fec66d;
+                color: #8d8d8d;
             }
         
             .asterisk {
@@ -55,14 +52,6 @@
             .title, .subtitle {
                 font-weight: normal;
                 text-align: center;
-            }
-            
-            .guidelines {
-                text-align: center;
-                
-                p {
-                    margin: 10px;
-                }
             }
             
             .group {
@@ -95,7 +84,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-evenly;
-                padding: 20px;
+                padding: 10px;
     
                 button {
                     background-color: var(--color-level1);
