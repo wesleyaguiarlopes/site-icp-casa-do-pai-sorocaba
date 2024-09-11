@@ -146,7 +146,28 @@
     .mobile-nav-bar.active {
         display: block;
     }
+
+    .btn-admin-logoff {
+        display:block;
+        width: 130px;
+        background-color: #ff4545;
+        text-decoration: none;
+        color: var(--color-level3);
+        padding: 5px;
+        border-radius: 10px;
+        text-align: center;
+        margin: 0 auto;
+        position: relative;
+        top: -10px;
+        font-size: 13px;
+    }
+
+    .btn-admin-logoff:hover {
+        font-weight: bold;
+        background-color: #ff0000;
+    }
 }
+
 
 /* RESPONSIVE */
 
@@ -216,6 +237,11 @@
             .btn-mobile-menu {
                 display: block;
             }
+        }
+
+        .btn-admin-logoff {
+            font-size: 11px;
+            width: 95px;
         }
     }
 }

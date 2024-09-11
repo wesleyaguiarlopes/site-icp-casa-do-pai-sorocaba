@@ -1,0 +1,39 @@
+#content {
+    height: 100vh;
+    background-image: linear-gradient(to top, #254e70 0%, #5E88BA 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .form-login {
+        background-color: var(--color-level3);
+        border-radius: 10px;
+        margin: 15px;
+        width: 290px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+
+        h1 {
+            font-weight: normal;
+            padding: 10px;
+        }
+
+        input {
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            border: none;
+            background-color: #f0f0f0;
+        }
+
+        input[type=submit] {
+            background-color: var(--color-level1);
+            color: var(--color-level3);
+        }
+
+        input[type=submit]:hover {
+            background-color: var(--color-level2);
+        }
+    }
+}

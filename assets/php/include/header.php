@@ -1,3 +1,18 @@
+<?php
+    session_start();
+
+    if(!$_SESSION['username'] == true){
+        echo "
+            <style>
+                #navigation-menu {
+                    .btn-admin-logoff {
+                        display: none;
+                    }
+                }
+            </style>
+        ";
+    }
+?>
 <div class="container-menu">
     <a class="container-logo" href="/">
         <img class="logo" src="assets/images/logotipo/logo_icp-casa-do-pai.png" alt="Logo da ICP Casa do Pai" title="ICP Casa do Pai Sorocaba">
@@ -33,3 +48,4 @@
         <li class="mobile-nav-items border-bottom"><a href="/#local">Ver o Mapa</a></li>
     </ul>
 </div>
+<a class="btn-admin-logoff" href="assets/php/logoff" title="Sair do Acesso ao gerenciamento do site">Sair do Admin</a>

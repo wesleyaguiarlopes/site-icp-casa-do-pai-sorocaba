@@ -5,6 +5,7 @@
     $row = $resultado->fetch_object();
     $rs = mysqli_query($con, $sql);
     mysqli_close($con);
+    session_start();
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
