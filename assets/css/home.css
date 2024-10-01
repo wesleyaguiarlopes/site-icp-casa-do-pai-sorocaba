@@ -4,7 +4,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url('../images/banner-sky.jpg');
+    background-image: linear-gradient(to bottom, #00000090 55%, #f0f4f9 100%), url('../images/banner-sky.jpg');
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -96,10 +96,6 @@
     dialog::backdrop {
         background-color: #000000a9;
     }
-}
-
-.overlay {
-    border-image: linear-gradient(#00000090, #00000090) fill 1;
 }
 
 /* RESPONSIVE */
