@@ -200,17 +200,7 @@
     }
 }
 
-/* --- SECTION CULTS --- */
 
-@media (max-width: 884px) {
-    #cultos {
-        height: auto;
-
-        .cults-container {
-            flex-direction: column;
-        }
-    }
-}
 
 /* --- SECTION PHOTO GALLERY --- */
 

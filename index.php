@@ -1,9 +1,16 @@
 <?php
-    $con = mysqli_connect("localhost", "u267143979_icpsorocaba", "EliasMaluf1402@", "u267143979_db_icpsorocaba");
+    include_once('assets/php/database-connection.php');
+
     $sql = "select * from tb_devotionalverse where 1";
     $resultado = $con->query($sql);
     $row = $resultado->fetch_object();
     $rs = mysqli_query($con, $sql);
+
+    $sql1 = "select * from tb_url where 1";
+    $resultado1 = $con->query($sql1);
+    $row1 = $resultado1->fetch_object();
+    $rs1 = mysqli_query($con, $sql1);
+
     mysqli_close($con);
     session_start();
 ?>
@@ -24,6 +31,8 @@
         <link rel="stylesheet" type="text/css" href="assets/css/reset-css-and-color-palette.css?v=005">
         <link rel="stylesheet" type="text/css" href="assets/css/header.css?v=005">
         <link rel="stylesheet" type="text/css" href="assets/css/home.css?v=005">
+        <link rel="stylesheet" type="text/css" href="assets/css/index/verse-day.css?v=005">
+        <link rel="stylesheet" type="text/css" href="assets/css/index/our-cults.css?v=005">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css?v=005">
         <link rel="stylesheet" type="text/css" href="assets/css/responsive.css?v=005">
         <link rel="stylesheet" type="text/css" href="assets/css/photo-gallery.css?v=005">
@@ -90,16 +99,54 @@
                 </div>
             </section>
             <section id="cultos">
-                <h3 class="title-cultus">Nossos Cultos</h3>
-                <div class="cults-container">
-                    <div class="cults-content">
-                        <img src="assets/images/banner_campaigns-and-cults/2024/banner_family-sunday.jpeg" alt="banner Domingo da família">
-                    </div> 
-                    <div class="cults-content">
-                        <img src="assets/images/banner_campaigns-and-cults/2024/banner_prophetic-thursday.jpeg" alt="banner Quarta profética">
+                <div class="cults-content">
+                    <div>
+                        <h2>Domingo <span>às 20h</span></h2>
+                        <p>Culto da Família</p>
+                        <p class="indicate-the-video">Assista nosso último vídeo deste dia <i class="fa-solid fa-circle-arrow-right"></i></p>
                     </div>
-                    <div class="cults-content">
-                        <img src="assets/images/banner_campaigns-and-cults/2024/banner_strong-friday.jpeg" alt="banner Sexta-feira Forte">
+                    <div class="container-video">
+                        <iframe
+                            src="<?php print $row1->urlSunday; ?>"
+                            title="YouTube video player"
+                            allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                <div class="cults-content">
+                    <h3 class="section-title-our">NOSSOS</h3>
+                    <h2 class="section-title-cults">CULTOS</h2>
+                    <div>
+                        <h2>Quarta-Feira <span>às 20h</span></h2>
+                        <p><span>Campanha: </span>Águas Purificadoras</p>
+                        <p class="indicate-the-video">Assista nosso último vídeo deste dia <i class="fa-solid fa-circle-arrow-right"></i></p>
+                    </div>
+                    <div class="container-video">
+                        <iframe
+                            src="<?php print $row1->urlWednesday; ?>"
+                            title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" r
+                            ferrerpolicy="strict-origin-when-cross-origin"
+                            allowullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                <div class="cults-content">
+                    <div>
+                        <h2>Sexta-Feira <span>às 20h</span></h2>
+                        <p><span>Campanha: </span>Rosas de Sarom</p>
+                        <p class="indicate-the-video">Assista nosso último vídeo deste dia <i class="fa-solid fa-circle-arrow-right"></i></p>
+                    </div>
+                    <div class="container-video">
+                        <iframe
+                            src="<?php print $row1->urlFriday; ?>"
+                            title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" r
+                            ferrerpolicy="strict-origin-when-cross-origin"
+                            allowullscreen>
+                        </iframe>
                     </div>
                 </div>
             </section>

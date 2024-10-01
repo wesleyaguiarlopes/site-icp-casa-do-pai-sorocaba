@@ -1,0 +1,93 @@
+#content {
+    min-height: 100vh;
+    background-image: linear-gradient(to top, #254e70 0%, #5E88BA 100%);
+
+    #update-videos {
+        padding-top: 105px;
+        
+        .update-form {
+            margin: auto;
+            padding: 10px;
+            font-size: 13px;
+            max-width: 800px;
+            background-color: var(--color-level3);
+            
+            .title {
+                font-size: 25px;
+            }
+        
+            .subtitle {
+                margin-top: -6px;
+                font-size: 20px;
+            }
+            
+            .title, .subtitle {
+                font-weight: normal;
+                text-align: center;
+            }
+
+            fieldset {
+                border-radius: 10px;
+                margin: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 10px;
+                padding: 10px;
+
+                legend {
+                    padding: 0 10px;
+
+                    span {
+                        background-color: red;
+                        color: white;
+                        padding: 1px 3px;
+                        border-radius: 5px;
+                    }
+                }
+
+                textarea {
+                    border: none;
+                    border-radius: 10px;
+                    padding: 10px;
+                    background-color: #f0f0f0;
+                    flex-grow: 1;
+                    resize: none;
+                }
+
+                textarea::placeholder {
+                    color: #8d8d8d;
+                }
+
+                button {
+                    background-color: var(--color-level1);
+                    border: none;
+                    color: var(--color-level3);
+                    padding: 10px;
+                    border-radius: 10px;
+            
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                }
+
+                button:hover {
+                    background-color: #3171a8;
+                }
+
+                i {
+                    margin-right: 5px;
+                }
+            }
+
+        }
+
+        .update-form:nth-child(1) {
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        .update-form:nth-child(3) {
+            border-radius: 0px 0px 10px 10px;
+        }
+    }
+}

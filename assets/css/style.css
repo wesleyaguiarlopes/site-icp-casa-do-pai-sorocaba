@@ -83,44 +83,6 @@ body {
     }
 }
 
-/* section cults */
-
-#cultos {
-    background-image: url('../images/wallpaper/wallpaper-2-opacity-40.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    height: 100vh;
-    padding: 68px 10px;
-
-    .title-cultus {
-        font-size: 30px;
-        text-align: center;
-        color: var(--color-level3);
-        backdrop-filter: blur(10px);
-    }
-
-    .cults-container {
-        height: 95%;
-        max-width: 1440px;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        gap: 10px;
-
-        .cults-content {
-            max-width: 400px;
-
-            img {
-                width: 100%;
-                border-radius: 30px;
-            }
-        }
-    }
-}
-
 /* section photo-gallery */
 
 #galeria-de-fotos {
