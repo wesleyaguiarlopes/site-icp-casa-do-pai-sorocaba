@@ -1,12 +1,17 @@
 <?php
-    session_start();
+    // se não existe sessão ativa
+    if(!isset($_SESSION)){
+        session_start();
+    }
 
-    if(!$_SESSION['username'] == true){
+    if(!$_SESSION){
         echo "
             <style>
                 #navigation-menu {
-                    .btn-admin-logoff {
-                        display: none;
+                    #admin-button-bar {
+                        .btn-admin-logged-in, .btn-admin-logoff {
+                            display: none;
+                        }
                     }
                 }
             </style>
@@ -48,4 +53,7 @@
         <li class="mobile-nav-items border-bottom"><a href="/#local">Ver o Mapa</a></li>
     </ul>
 </div>
-<a class="btn-admin-logoff" href="assets/php/logoff" title="Sair do Acesso ao gerenciamento do site">Sair do Admin</a>
+<div id="admin-button-bar">
+    <a class="btn-admin-logged-in" href="admin" title="Ir para o gerenciamento do site">Acessar Admin</a>
+    <a class="btn-admin-logoff" href="assets/php/logoff" title="Sair do Acesso ao gerenciamento do site">Sair do Admin</a>
+</div>

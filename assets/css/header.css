@@ -9,6 +9,7 @@
     border-radius: 10px;
     width: calc(100% - 30px);
     background-color: var(--color-level3);
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 
     .container-menu {
         height: 100%;
@@ -46,6 +47,7 @@
                         text-decoration: none;
                         color: var(--color-level0);
                         text-transform: capitalize;
+                        transition: background-color 1s;
                     }
                 }
 
@@ -147,27 +149,41 @@
         display: block;
     }
 
-    .btn-admin-logoff {
-        display:block;
-        width: 130px;
-        background-color: #ff4545;
-        text-decoration: none;
-        color: var(--color-level3);
-        padding: 5px;
-        border-radius: 10px;
-        text-align: center;
-        margin: 0 auto;
-        position: relative;
-        top: -10px;
-        font-size: 13px;
-    }
+    #admin-button-bar {
+        display: flex;
+        justify-content: center;
 
-    .btn-admin-logoff:hover {
-        font-weight: 500;
-        background-color: #ff0000;
+        .btn-admin-logged-in, .btn-admin-logoff {
+            top: -10px;
+            width: 130px;
+            padding: 5px;
+            font-size: 13px;
+            position: relative;
+            text-align: center;
+            text-decoration: none;
+            color: var(--color-level3);
+            box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+        }
+
+        .btn-admin-logged-in {
+            background-color: #3274af;
+            border-radius: 5px 0 0 5px;
+        }
+
+        .btn-admin-logoff {
+            background-color: #ff4545;
+            border-radius: 0 5px 5px 0;
+        }
+
+        .btn-admin-logged-in:hover {
+            background-color: #0f60a7;
+        }
+
+        .btn-admin-logoff:hover {
+            background-color: #ff0000;
+        }
     }
 }
-
 
 /* RESPONSIVE */
 
@@ -240,9 +256,12 @@
             }
         }
 
-        .btn-admin-logoff {
-            font-size: 11px;
-            width: 95px;
+        #admin-button-bar {
+
+            .btn-admin-logged-in, .btn-admin-logoff {
+                font-size: 11px;
+                width: 95px;
+            }
         }
     }
 }
