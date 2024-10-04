@@ -1,0 +1,130 @@
+#daily-devotional {
+    min-height: 100vh;
+
+    .content-verse-of-the-day {
+        gap: 30px;
+        width: 100%;
+        display: flex;
+        position: relative;
+        align-items: center;
+        flex-direction: column;
+        background-size: cover;
+        color: var(--color-level3);
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 0 0 10px 10px;
+        padding: 140px 10px 65px 10px;
+        background-image: linear-gradient(to bottom, #00000065 55%, transparent 100%), url('../images/devotional-verse/person-meditating-on-the-word.jpg');
+
+        .text-verse {
+            width: 100%;
+            font-size: 28px;
+            max-width: 700px;
+            font-weight: 700;
+            line-height: 45px;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+
+        .book-verse {
+            text-align: center;
+            vertical-align:top;
+            align-items: center;
+            display: inline-flex;
+        }
+
+        .devotional-section-title {
+            bottom: -24px;
+            padding: 10px 30px;
+            position: absolute;
+            border-radius: 10px;
+            color: var(--color-level0);
+            background-color: var(--color-level3);
+            box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+        }
+    }
+
+    .content-devotional-text {
+        width: 100%;
+        max-width: 700px;
+        line-height: 35px;
+        padding: 50px 10px;
+        position: relative;
+        text-align: center;
+        margin: 0 auto 90px auto;
+        color: var(--color-level0);
+
+        .author {
+            left: 0;
+            right: 0;
+            bottom: -35px;
+            margin: 0 auto;
+            padding: 0 10px;
+            font-size: 14px;
+            font-weight: 300;
+            position: absolute;
+            width: fit-content;
+            border-radius: 10px;
+            background-color: #fafafa;
+            border-left: 3px solid var(--color-level0);
+
+            i {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .content-devotional-text::first-letter {
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    .fa-solid {
+        margin: 0 5px;
+        font-size: 26px;
+    }
+}
+
+@media(max-width: 740px) {
+
+    #daily-devotional {
+        min-height: 100vh;
+
+        .content-verse-of-the-day {
+            gap: 30px;
+            padding: 110px 10px 55px 10px;
+            background-position: center top;
+
+            .text-verse {
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 25px;
+                letter-spacing: 0px;
+            }
+
+            .book-verse {
+                font-size: 13px;
+            }
+        }
+
+        .content-devotional-text {
+            font-size: 14px;
+            line-height: 30px;
+            padding: 50px 20px;
+            letter-spacing: 1px;
+            text-align: justify;
+
+            .author {
+                font-size: 12px;
+            }
+        }
+
+        .content-devotional-text::first-letter {
+            font-size: 40px;
+        }
+
+        .fa-solid {
+            font-size: 26px;
+        }
+    }
+}

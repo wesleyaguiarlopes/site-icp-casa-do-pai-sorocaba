@@ -267,33 +267,3 @@
         }
     }
 }
-
-/* daily devotional page - devocional.html */
-
-@media (max-width: 720px) {
-
-    #daily-devotional {
-
-        .container-verse {
-            padding: 10px;
-
-            .btn_to-go-back:visited {
-                color: var(--color-level0);
-            }
-        }
-
-        img {
-            width: 100%;
-            margin: 1px 0 0 0;
-        }
-
-        p {
-            line-height: 30px;
-            margin: 0 auto;
-            width: 100%;
-            padding: 15px;
-            text-align: left;
-            font-size: 14px;
-        }
-    }
-}

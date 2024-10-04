@@ -1,5 +1,6 @@
 <?php
-    $con = mysqli_connect("localhost", "u267143979_icpsorocaba", "EliasMaluf1402@", "u267143979_db_icpsorocaba");
+    include_once('assets/php/database-connection.php');
+
     $sql = "select * from tb_devotionalverse where 1";
     $resultado = $con->query($sql);
     $row = $resultado->fetch_object();
@@ -42,8 +43,7 @@
         <!-- import -->
         <link rel="stylesheet" type="text/css" href="assets/css/reset-css-and-color-palette.css?v=005">
         <link rel="stylesheet" type="text/css" href="assets/css/header.css?v=005">
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css?v=005">
-        <link rel="stylesheet" type="text/css" href="assets/css/responsive.css?v=005">
+        <link rel="stylesheet" type="text/css" href="assets/css/devotional.css?v=005">
         <link rel="stylesheet" type="text/css" href="assets/css/footer.css?v=005">
 
         <!-- import CDN icons -->
@@ -61,16 +61,22 @@
         </header>
         <main id="content">
             <section id="daily-devotional">
-                <h3 class="devotional-section-title">Devocional</h3>
-                <img src="https://i.ibb.co/2vbp0J7/pessoa-meditando-na-palavra.png" alt="">
-                <p>
-                    <i class="fa-solid fa-quote-left"></i>
-                    <?php print $row->textVerseOfTheDay; ?>
-                    <i class="fa-solid fa-quote-right"></i>
-                </br>
-                    <span> <i class="fa-solid fa-book-bible"></i> <?php print $row->bibleBook; ?> - <?php print $row->bibleVersion; ?></span>
-                </p>
-                <p><?php print $row->dailyDevotionalText; ?></p>
+                <div class="content-verse-of-the-day">
+                    <p class="text-verse">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <?php print $row->textVerseOfTheDay; ?>
+                        <i class="fa-solid fa-quote-right"></i>
+                    </p>
+                    <p class="book-verse">
+                        <i class="fa-solid fa-book-bible"></i>
+                        <?php print $row->bibleBook; ?> - <?php print $row->bibleVersion; ?>
+                    </p>
+                    <h3 class="devotional-section-title">Devocional</h3>
+                </div>
+                <div class="content-devotional-text">
+                    <p><?php print $row->dailyDevotionalText; ?></p>
+                    <p class="author"><?php print $row->authorName; ?>...<i class="fa-solid fa-pen-clip"></i></p>
+                </div>
             </section>
         </main>
         <footer>
