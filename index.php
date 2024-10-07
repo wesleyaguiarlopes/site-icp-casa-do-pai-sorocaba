@@ -34,9 +34,9 @@
         <link rel="stylesheet" type="text/css" href="assets/css/index/verse-day.css?v=005">
         <link rel="stylesheet" type="text/css" href="assets/css/index/our-cults.css?v=005">
         <link rel="stylesheet" type="text/css" href="assets/css/index/seven-areas-of-full-life.css?v=005">
+        <link rel="stylesheet" type="text/css" href="assets/css/index/photo-gallery.css?v=005">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css?v=005">
         <link rel="stylesheet" type="text/css" href="assets/css/responsive.css?v=005">
-        <link rel="stylesheet" type="text/css" href="assets/css/photo-gallery.css?v=005">
         <link rel="stylesheet" type="text/css" href="assets/css/footer.css?v=005">
 
         <!-- browser visual settings -->
@@ -152,7 +152,6 @@
                 </div>
             </section>
             <section id="nossas-fotos">
-                <h3 class="section-gallery-title">Galeria de Fotos</h3>
                 <div id="gallery-primary">
                     <figcaption class="photo-caption">29.06.2024 - Encontro de Casais ❤️</figcaption>
 
