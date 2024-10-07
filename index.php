@@ -33,6 +33,7 @@
         <link rel="stylesheet" type="text/css" href="assets/css/home.css?v=005">
         <link rel="stylesheet" type="text/css" href="assets/css/index/verse-day.css?v=005">
         <link rel="stylesheet" type="text/css" href="assets/css/index/our-cults.css?v=005">
+        <link rel="stylesheet" type="text/css" href="assets/css/index/seven-areas-of-full-life.css?v=005">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css?v=005">
         <link rel="stylesheet" type="text/css" href="assets/css/responsive.css?v=005">
         <link rel="stylesheet" type="text/css" href="assets/css/photo-gallery.css?v=005">
@@ -514,7 +515,7 @@
                     </div>
                 </div>
             </section>
-            <section id="areas-de-vida-plena">
+            <section id="seven-areas-of-full-life">
                 <div class="title">
                     <h2>7</h2>
                     <h3>áreas de <span>vida plena</span></h3>
@@ -722,5 +723,6 @@
 
         <!-- import javascript -->
         <script src="assets/js/script.js?v=005"></script>
+        <script src="assets/js/dialog-seven-areas-of-full-life.js?v=005"></script>
     </body>
 </html>
