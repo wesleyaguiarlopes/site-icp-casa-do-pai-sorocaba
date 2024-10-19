@@ -40,7 +40,7 @@
             <h2 class="title-question">O que deseja fazer?</h2>
             <div class="container-btn">
                 <a  class="btn-anchor" href="/atualizar-devocional">Atualizar Devocional</a>
-                <a  class="btn-anchor" href="/pedidos-de-oracao">Ver Pedidos de Oração</a>
+                <a  class="btn-anchor" href="pedidos-de-oracao">Ver Pedidos de Oração</a>
                 <a  class="btn-anchor" href="/atualizar-videos">Atualizar Link dos Vídeos</a>
             </div>
         </main>

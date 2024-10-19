@@ -86,30 +86,7 @@
     }
 }
 
-@media (max-width: 836px) {
-
-    /* section prayer request */
-
-    #pedido-de-oracao {
-
-        .group {
-            flex-direction: column;
-        }
-
-        form > div > div{
-            width: 93%;
-            margin-bottom: 10px;
-        }
-    }
-}
-
 @media (max-width: 768px) {
-
-    /* section prayer request */
-
-    #pedido-de-oracao, #pedido-de-oracao-enviado {
-        padding: 40px 5px;
-    }
 
     /* section contribute */
 
@@ -139,21 +116,6 @@
 
 @media (max-width: 620px) {
 
-    /* section prayer request */
-
-    #pedido-de-oracao {
-
-        form {
-            padding: 0px;
-        }
-    }
-
-    #pedido-de-oracao-enviado {
-        #btn-home::after {
-            content: "Ir para o Início";
-        }
-    }
-
     /* section local */
 
     #local {
@@ -165,14 +127,6 @@
 }
 
 @media (max-width: 450px) {
-
-    /* section prayer request */
-
-    #pedido-de-oracao-enviado {
-        .card-thanks {
-            padding: 40px 10px;
-        }
-    }
 
     /* section contribute */
 
@@ -191,11 +145,5 @@
     #only-mobile-max-450 {
         display: block;
         text-align: center;
-    }
-}
-
-@media (max-height: 820px) {
-    #pedido-de-oracao {
-        height: auto;
     }
 }

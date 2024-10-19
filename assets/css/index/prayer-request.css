@@ -1,0 +1,189 @@
+#pedido-de-oracao {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    background-size: cover;
+    justify-content: center;
+    padding: 105px 0 105px 0;
+    color: var(--color-level3);
+    background-repeat: no-repeat;
+    border-radius: 30px 30px 0 0;
+    background-attachment: fixed;
+    background-image: url('../../images/wallpaper/wallpaper-people-holding-hands-praying.webp');
+
+    .title {
+        font-size: 25px;
+        text-align: center;
+        font-weight: normal;
+    }
+
+    .subtitle {
+        font-size: 50px;
+        font-weight: 400;
+        margin-top: -25px;
+        text-align: center;
+    }
+
+    .title, .subtitle {
+        text-shadow: 1px 1px 10px #000;
+    }
+
+    form {
+        margin: auto;
+        font-size: 13px;
+        max-width: 700px;
+        padding: 30px 50px;
+        border-radius: 30px;
+        background-color: #00000081;
+    }
+
+    .info-bible {
+        text-align: center;
+
+        p {
+            margin: 10px;
+        }
+    }
+
+    form > div {
+        padding: 10px;
+    }
+
+    form > div > div {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    input, textarea {
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    textarea {
+        resize: vertical;
+    }
+
+    .container-msg {
+        width: 93%;
+        display: flex;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    span {
+        color: #fec66d;
+    }
+
+    .asterisk {
+        color: red;
+    }
+
+    .btn-form, .group {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .btn-form button {
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        color: var(--color-level3);
+        background-color: var(--color-level1);
+
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .btn-form button:hover {
+        background-color: #3171a8;
+    }
+
+    .btn-form i {
+        margin-right: 5px;
+    }
+
+    dialog {
+        margin: auto;
+        border: none;
+        border-radius: 30px;
+        animation: dialog 1s;
+
+
+        .content {
+            gap: 10px;
+            width: 100%;
+            height: 100%;
+            padding: 50px;
+            display: flex;
+            max-width: 500px;
+            text-align: center;
+            align-items: center;
+            border-radius: 30px;
+            flex-direction: column;
+            justify-content: center;
+            color: var(--color-level0);
+
+            i {
+                font-size: 70px;
+            }
+
+            .fa-circle-check {
+                color: #0AA64D;
+            }
+
+            .fa-circle-xmark {
+                color: #EE2028;
+            }
+
+            button {
+                border: none;
+                padding: 10px 20px;
+                border-radius: 10px;
+                color: var(--color-level3);
+                background-color: var(--color-level1);
+            }
+        }
+    }
+
+    dialog::backdrop {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+}
+
+@media (max-width: 740px) {
+
+    #pedido-de-oracao {
+        padding: 0;
+
+        form {
+            padding: 85px 0 85px 0;
+            border-radius: 30px 30px 0 0;
+
+            .group {
+                flex-direction: column;
+            }
+        }
+
+        form > div > div{
+            width: 93%;
+            margin-bottom: 10px;
+        }
+
+    }
+}
+
+@keyframes dialog {
+    0% {
+        opacity: 0;
+        transform: translateY(-40px);
+
+    }
+    100% {
+        opacity: 100%;
+        transform: translateY(0px);
+    }
+}

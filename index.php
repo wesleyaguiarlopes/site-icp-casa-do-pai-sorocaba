@@ -35,6 +35,7 @@
         <link rel="stylesheet" type="text/css" href="assets/css/index/our-cults.css?v=005">
         <link rel="stylesheet" type="text/css" href="assets/css/index/seven-areas-of-full-life.css?v=005">
         <link rel="stylesheet" type="text/css" href="assets/css/index/photo-gallery.css?v=005">
+        <link rel="stylesheet" type="text/css" href="assets/css/index/prayer-request.css?v=005">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css?v=005">
         <link rel="stylesheet" type="text/css" href="assets/css/responsive.css?v=005">
         <link rel="stylesheet" type="text/css" href="assets/css/footer.css?v=005">
@@ -573,7 +574,7 @@
                 </div>
             </section>
             <section id="pedido-de-oracao">
-                <form action="https://formsubmit.co/7646a5d577513e1ec9f9705c56dd5d2d" method="POST" autocomplete="on">
+                <form action="assets/php/register-prayer-request.php" method="POST" autocomplete="on">
                     <h2 class="title">Pedido de</h2>
                     <h3 class="subtitle">Oração</h3>
                     <div class="info-bible">
@@ -582,34 +583,34 @@
                     </div>
                     <div class="group">
                         <div class="items-form">
-                            <label for="Nome">Nome (Ex: José Oliveira)
+                            <label for="name">Nome (Ex: José Oliveira)
                                 <span class="asterisk">*</span>
                             </label>
-                            <input type="text" name="Nome" placeholder="Informe o seu nome" autocomplete="name" required>
+                            <input type="text" name="name" placeholder="Informe o seu nome" autocomplete="name" maxlength="100" required>
                         </div>
                         <div class="items-form">
-                            <label for="Email">E-mail</label>
-                            <input type="text" name="Email" placeholder="Informe o seu endereço de e-mail" autocomplete="email">
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" placeholder="Informe o seu endereço de e-mail" maxlength="100" autocomplete="email">
                         </div>
                     </div>
                     <div class="group">
                         <div>
-                            <label for="Bairro">Bairro</label>
-                            <input type="text" name="Bairro" placeholder="Informe o seu bairro" autocomplete="address-level3">
+                            <label for="neighborhood">Bairro</label>
+                            <input type="text" name="neighborhood" placeholder="Informe o seu bairro" maxlength="40" autocomplete="address-level3">
                         </div>
                         <div>
-                            <label for="Cidade">Cidade</label>
-                            <input type="text" name="Cidade" placeholder="Informe a sua cidade" autocomplete="address-level2">
+                            <label for="city">Cidade</label>
+                            <input type="text" name="city" placeholder="Informe a sua cidade" maxlength="40" autocomplete="address-level2">
                         </div>
                     </div>
                     <div class="container-msg">
-                        <label for="Pedido_de_Oração">Pedido de Oração
+                        <label for="requestPrayer">Pedido de Oração
                             <span class="asterisk">*</span>
                         </label>
-                        <textarea name="Pedido_de_Oração" id="message" rows="5" placeholder="Digite aqui o seu pedido de oração..." required></textarea>
+                        <textarea name="requestPrayer" id="message" rows="5" placeholder="Digite aqui o seu pedido de oração..." required></textarea>
                     </div>
                     <div class="btn-form">
-                        <button type="submit" title="Clique para Enviar o seu Pedido de Oração">
+                        <button type="submit" name="btn-send-prayer-request" title="Clique para Enviar o seu Pedido de Oração">
                             <i class="fa-regular fa-paper-plane"></i>
                             Enviar Pedido
                         </button>
@@ -618,13 +619,23 @@
                             Limpar Campos
                         </button>
                     </div>
-                    <input type="hidden" name="_cc" value="lopes.a.wesley@gmail.com">
-                    <!-- Para definir mais endereços de e-mail, adiciono a vírgula -->
-                    <input type="hidden" name="_subject" value="Novo Pedido de Oração através do Site">
-                    <input type="hidden" name="_template" value="table">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_next" value="enviado">
                 </form>
+                <dialog id="dg-prayer-request-sent">
+                    <div class="content">
+                        <i class="fa-regular fa-circle-check fa-fade"></i>
+                        <h1>Enviado!</h1>
+                        <p>Recebemos o seu pedido de oração e estaremos orando por sua causa!</p>
+                        <button id="btn-close-prayer-request-sent">Ok</button>
+                    </div>
+                </dialog>
+                <dialog id="dg-prayer-request-not-sent">
+                    <div class="content">
+                        <i class="fa-regular fa-circle-xmark fa-fade"></i>
+                        <h1>Falha ao Enviar!</h1>
+                        <p>Desculpe :( ! não conseguimos receber o seu pedido de oração, por favor, nos envie novamente</p>
+                        <button id="btn-close-prayer-request-not-sent">Ok</button>
+                    </div>
+                </dialog>
             </section>
             <section id="contribuir" class="section-default">
                 <h3 class="section-title">Contribuir</h3>
@@ -723,5 +734,6 @@
         <!-- import javascript -->
         <script src="assets/js/script.js?v=005"></script>
         <script src="assets/js/dialog-seven-areas-of-full-life.js?v=005"></script>
+        <script src="assets/js/dialog-prayer-request.js?v=005"></script>
     </body>
 </html>

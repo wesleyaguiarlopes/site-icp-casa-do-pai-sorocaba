@@ -1,0 +1,144 @@
+#prayer-requests {
+    min-height: 100vh;
+    color: var(--color-level0);
+    padding: 115px 15px 15px 15px;
+    background-image: linear-gradient(to top, #254e70 0%, #5E88BA 100%);
+
+    .content {
+        width: 100%;
+        margin: auto;
+        padding: 10px;
+        font-size: 13px;
+        max-width: 1100px;
+        border-radius: 10px;
+        background-color: var(--color-level3);
+
+        .title {
+            font-size: 25px;
+            text-align: center;
+            font-weight: normal;
+        }
+
+        .subtitle {
+            font-size: 50px;
+            font-weight: 400;
+            margin-top: -25px;
+            text-align: center;
+        }
+
+        .table-contents {
+            margin-top: 15px;
+            border-spacing: 10px;
+
+            tbody {
+
+                tr {
+                    border-radius: 10px;
+                    box-shadow: 0px 0px 10px -3px rgba(0,0,0,0.2);
+
+                    td {
+                        padding: 10px;
+
+                        .name {
+                            width: 140px;
+                            display: block;
+                            font-size: 17px;
+                            overflow: hidden;
+                            text-wrap: nowrap;
+                            font-weight: bold;
+                            text-overflow: ellipsis;
+                            color: var(--color-level1);
+
+                            i {
+                                color: var(--color-level0);
+                            }
+                        }
+
+                        .email {
+                            width: 220px;
+                            display: block;
+                            overflow: hidden;
+                            text-wrap: nowrap;
+                            text-decoration: none;
+                            text-overflow: ellipsis;
+                            color: var(--color-level0);
+                        }
+
+                        .email:hover {
+                            text-decoration: underline;
+                        }
+
+                        i {
+                            margin-right: 5px
+                        }
+                    }
+
+                    td:nth-child(1) {
+                        font-size: 20px;
+                        border-radius: 10px 0 0 10px;
+                    }
+
+                    td:nth-child(1)::before {
+                        content: "#";
+                    }
+
+                    td:nth-child(4) {
+                        width: 100%;
+                        overflow: hidden;
+                        max-width: 700px;
+                        line-height: 23px;
+                        border-radius: 10px;
+                        word-break: break-word;
+                        background-color: #f0f0f0;
+                        border-radius: 0 10px 10px 0;
+                    }
+                }
+
+                tr:hover {
+                    box-shadow: 0px 0px 10px -3px rgba(0,0,0,0.5);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 740px) {
+
+    #prayer-requests {
+        padding-top: 85px;
+        width: 100%;
+
+        .table-contents {
+
+            tr {
+                display: flex;
+                padding: 10px;
+                flex-wrap: wrap;
+                border-radius: 10px;
+                margin-bottom: 15px;
+                border-bottom: 1px solid var(--color-level1);
+
+                td {
+                    flex-grow: 1;
+                }
+
+                td:nth-child(1) {
+                    text-align: right;
+                }
+
+                td:nth-child(2) {
+                    display: flex;
+                    align-items: center;
+                }
+
+                td:nth-child(3), td:nth-child(4){
+                    width: 100%;
+                }
+
+                td:nth-child(4) {
+                    border-left: 2px solid var(--color-level1);
+                }
+            }
+        }
+    }
+}
