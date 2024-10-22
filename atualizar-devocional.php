@@ -66,7 +66,7 @@
                             <label for="bible-book">Livro - Capítulo - Versículo
                                 <span class="asterisk">*</span>
                             </label>
-                            <input type="text" name="bible-book" placeholder="Ex: João 10:10-12" required autocomplete="off">
+                            <input type="text" name="bible-book" placeholder="Ex: João 10:10-12" required autofocus autocomplete="off">
                         </div>
                         <div class="items-form">
                             <label for="bible-version">Versão do texto do Versículo
