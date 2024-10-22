@@ -45,8 +45,8 @@
         <main id="content">
             <form class="form-login" action="assets/php/authentication" method="post">
                 <h1>Login</h1>
-                <input type="text" name="username" placeholder="Nome de usuário" autofocus>
-                <input type="password" name="password" placeholder="Senha">
+                <input type="text" name="username" placeholder="Nome de usuário" required autofocus>
+                <input type="password" name="password" placeholder="Senha" required>
                 <input type="submit" name="submit" value="Acessar">
             </form>
         </main>
