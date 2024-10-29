@@ -36,6 +36,7 @@
         <link rel="stylesheet" type="text/css" href="assets/css/index/seven-areas-of-full-life.css?v=005">
         <link rel="stylesheet" type="text/css" href="assets/css/index/photo-gallery.css?v=005">
         <link rel="stylesheet" type="text/css" href="assets/css/index/prayer-request.css?v=005">
+        <link rel="stylesheet" type="text/css" href="assets/css/index/contribute.css?v=005">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css?v=005">
         <link rel="stylesheet" type="text/css" href="assets/css/responsive.css?v=005">
         <link rel="stylesheet" type="text/css" href="assets/css/footer.css?v=005">
@@ -637,72 +638,46 @@
                     </div>
                 </dialog>
             </section>
-            <section id="contribuir" class="section-default">
-                <h3 class="section-title">Contribuir</h3>
-                <div class="contribute-container limit-width">
-                    <div class="content-pix">
-                        <p>Nesta área, você pode contribuir com a <span>ICP Sorocaba</span>, com os seus <span class="tithe">dízimos</span> e <span class="offer">ofertas</span>, através do Pix
-                            <i class="fa-brands fa-pix"></i>
+            <section id="contribuir">
+                <p>Nesta área, você pode contribuir com a <span>ICP Casa do Pai Sorocaba</span>, com os seus <span >dízimos</span> e <span >ofertas</span>, através do Pix <i class="fa-brands fa-pix"></i></p>
+                <p>Veja abaixo, o que a palavra de <span>Deus</span>, diz, sobre <span >dízimos</span> e <span >ofertas</span> :</p>
+                <div class="content-details">
+                    <details open>
+                        <summary >Dizimista, a palavra diz:</summary>
+                        <p class="bible-book">Tragam todos os seus dízimos aos depósitos do templo, para que haja provisão em minha casa. Se o fizerem”, diz o SENHOR dos Exércitos, “abrirei as janelas do céu para vocês. Derramarei tantas bênçãos que não haverá espaço para guardá-las! Sim, ponham-me à prova!</br>
+                            <span>Malaquias 3:10 NVT</span>
                         </p>
-                        <p>Veja abaixo, o que a palavra de <span>Deus</span>, diz, sobre <span class="tithe">dízimos</span> e <span class="offer">ofertas</span> :</p>
-                        <div class="card-bible">
-                            <h4 class="tithe">Dizimista</h4>
-                            <p class="bible-book">Tragam todos os seus dízimos aos depósitos do templo, para que haja provisão em minha casa. Se o fizerem”, diz o SENHOR dos Exércitos, “abrirei as janelas do céu para vocês. Derramarei tantas bênçãos que não haverá espaço para guardá-las! Sim, ponham-me à prova!</br>
-                                <span>Malaquias 3:10 NVT</span>
-                            </p>
-                        </div>
-                        <div class="card-bible">
-                            <h4 class="offer">Ofertante</h4>
-                            <p class="bible-book">Cada um deve decidir em seu coração quanto dar. Não contribuam com relutância ou por obrigação. “Pois Deus ama quem dá com alegria.” Deus é capaz de lhes conceder todo tipo de bênçãos, para que, em todo tempo, vocês tenham tudo de que precisam, e muito mais ainda, para repartir com outros.”</br>
-                                <span>2° Coríntios 9:7-8 NVT</span></p>
-                        </div>
+                    </details>
+                    <details open>
+                        <summary >Ofertante, a palavra diz:</summary>
+                        <p class="bible-book">Cada um deve decidir em seu coração quanto dar. Não contribuam com relutância ou por obrigação. “Pois Deus ama quem dá com alegria.” Deus é capaz de lhes conceder todo tipo de bênçãos, para que, em todo tempo, vocês tenham tudo de que precisam, e muito mais ainda, para repartir com outros.”</br>
+                            <span>2° Coríntios 9:7-8 NVT</span>
+                        </p>
+                    </details>
+                </div>
+                <div class="content-qr-code">
+                    <div class="content-phone-camera">
+                        <img src="assets/images/qr-code/pointing-the-cell-phone-camera.png" class="phone-camera" alt="QR Code Pix" title="Aponte a câmera com leitor de Qr Code do seu Banco">
                     </div>
-                    <div class="content-qr-code">
-                        <p>
-                            <span><i class="fa-solid fa-arrow-right"></i> </span>
-                            Abra o aplicativo do seu banco <i class="fa-solid fa-building-columns"></i> .</br>
-                            <span><i class="fa-solid fa-arrow-right"></i> </span>
-                            Escolha a opção de Pix por QR Code.</br>
-                            <span><i class="fa-solid fa-arrow-right"></i> </span>
-                            Aponte a câmera <i class="fa-solid fa-camera"></i> para o QR Code <i class="fa-solid fa-qrcode"></i> abaixo.</br>
-                            <span><i class="fa-solid fa-arrow-right"></i> </span>
-                            Confirme se a transferência, está sendo realizada para :</br>
-                            <span>Evandro Jose Luís Lopes</span></br>
-                            <span><i class="fa-solid fa-arrow-right"></i> </span>
-                            Siga os passos do seu aplicativo, para realizar a transferência.
-                        </p>
-                        <img src="assets/images/qr-code/qrcode-pix.png" alt="QR Code Pix" title="Aponte a câmera com leitor de Qr Code do seu Banco">
-                        <div class="key-pix">
-                            <p><span><i class="fa-solid fa-arrow-right"></i> </span>Ou copie a <span>Chave Pix : E-mail</span> para utilizar no <span>Internet Banking</span></p>
-                            <input type="text" id="key-pix" value="ejll@hotmail.com" readonly=“true”>
-                            <button class="btn-copy-pix" title="Clique aqui para copiar a chave Pix" onclick="copy()">Copiar Chave Pix
-                                <i class="fa-regular fa-copy"></i>
-                            </button>
-                        </div>
+                    <div>
+                        <img src="assets/images/qr-code/qrcode-pix.webp" class="qr-code" alt="QR Code Pix" title="Aponte a câmera com leitor de Qr Code do seu Banco">
                     </div>
-                    <div class="content-qr-code-mobile">
-                        <p>
-                            <span><i class="fa-solid fa-arrow-right"></i> </span>
-                            Abra o aplicativo do seu banco <i class="fa-solid fa-building-columns"></i> .</br>
-                            <span><i class="fa-solid fa-arrow-right"></i> </span>
-                            Escolha a opção de Pix por QR Code.</br>
-                            <span><i class="fa-solid fa-arrow-right"></i> </span>
-                            Aponte a câmera <i class="fa-solid fa-camera"></i> para o QR Code <i class="fa-solid fa-qrcode"></i> abaixo.</br>
-                            <span><i class="fa-solid fa-arrow-right"></i> </span>
-                            Confirme se a transferência, está sendo realizada para :</br>
-                            <span>Evandro Jose Luís Lopes</span></br>
-                            <span><i class="fa-solid fa-arrow-right"></i> </span>
-                            Siga os passos do seu aplicativo, para realizar a transferência.
-                        </p>
-                        <img src="assets/images/qr-code/qrcode-pix.png" alt="QR Code Pix" title="Aponte a câmera com leitor de Qr Code do seu Banco">
-                        <div class="key-pix">
-                            <p><span><i class="fa-solid fa-arrow-right"></i> </span>Ou copie a <span>Chave Pix : E-mail</span> para utilizar no <span>Internet Banking</span></p>
-                            <p id="only-mobile-max-450"><span><i class="fa-solid fa-arrow-right"></i> </span>Copie a <span>Chave Pix : E-mail</span>, clicando no botão <i class="fa-regular fa-copy"></i> para utilizar no seu <span>Aplicativo do banco</span>. Confirme se a transferência está para <span>Evandro Jose Luíz Lopes</span></p>
-                            <input type="text" id="key-pix-mobile" value="ejll@hotmail.com" readonly=“true”>
-                            <button class="btn-copy-pix" title="Clique aqui para copiar a chave Pix" onclick="copy_mobile()">Copiar Chave Pix
-                                <i class="fa-regular fa-copy"></i>
-                            </button>
-                        </div>
+                    <div class="tutorial-content">
+                        <p>Abra o aplicativo do seu banco <i class="fa-solid fa-building-columns"></i></p>
+                        <p>Na <span>Área Pix,</span> escolha a opção <span> Ler QR Code</span></p>
+                        <p>Aponte a câmera <i class="fa-solid fa-camera"></i> para o QR Code <i class="fa-solid fa-qrcode"></i></p>
+                        <p>Digite o valor que irá contribuír</p>
+                        <p>Confirme se a transferência, está sendo realizada para : <span>Evandro Jose Luís Lopes</span></p>
+                        <p>Siga os passos do seu aplicativo, para finalizar a contribuição.</p>
+                    </div>
+                </div>
+                <div class="key-pix">
+                    <p>Ou copie a <span>Chave Pix : E-mail</span> para utilizar no <span>Internet Banking</span></p>
+                    <div>
+                        <input type="text" id="key-pix-email" class="key-pix-email" value="ejll@hotmail.com" readonly=“true”>
+                        <button class="btn-copy-pix" title="Clique aqui para copiar a chave Pix" onclick="copy()">Copiar
+                            <i class="fa-regular fa-copy"></i>
+                        </button>
                     </div>
                 </div>
             </section>
@@ -735,5 +710,6 @@
         <script src="assets/js/script.js?v=005"></script>
         <script src="assets/js/dialog-seven-areas-of-full-life.js?v=005"></script>
         <script src="assets/js/dialog-prayer-request.js?v=005"></script>
+        <script src="assets/js/contribute.js"></script>
     </body>
 </html>

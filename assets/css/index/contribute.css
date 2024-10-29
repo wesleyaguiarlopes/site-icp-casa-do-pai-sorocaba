@@ -1,0 +1,214 @@
+#contribuir {
+    min-height: 100vh;
+    text-align: center;
+    color: var(--color-level3);
+    padding: 105px 15px 105px 15px;
+    background-color: var(--color-level2);
+
+    .fa-pix {
+        color: #32bcad;
+        font-size: 20px;
+    }
+
+    span, i {
+        color: rgb(255, 196, 0);
+    }
+
+    .content-details {
+        gap: 10px;
+        width: 100%;
+        display: flex;
+        text-align: left;
+        margin: 15px auto;
+        justify-content: center;
+
+        details {
+            width: 500px;
+            padding: 10px;
+            max-width: 100%;
+            border-radius: 10px;
+            color: var(--color-level0);
+
+            summary {
+                padding: 10px;
+                border-radius: 10px;
+                color: var(--color-level3);
+                background-color: var(--color-level1);
+                border-bottom: 3px solid var(--color-level0);
+            }
+
+            p {
+                padding: 10px;
+                border-radius: 10px;
+                background-color: #f0f0f0;
+
+                span {
+                    text-shadow: 1px 1px #000;
+                }
+            }
+        }
+
+        details[open] {
+            background-color: var(--color-level3);
+        }
+
+        details[close] {
+            background-color: transparent;
+        }
+    }
+
+    .content-qr-code {
+        gap: 20px;
+        display: flex;
+        margin: 50px 0;
+        justify-content: center;
+
+        .content-phone-camera {
+            width: 400px;
+            position: relative;
+            
+
+            .phone-camera {
+                position: absolute;
+                width: 115%;
+                text-shadow: 10px 10px white;
+
+                right: 0;
+                top: 0;
+            }
+        }
+
+        .qr-code {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 10px;
+        }
+
+        .tutorial-content {
+            p:before {
+                content: "⇒";
+                color: #ffc400;
+                margin-right: 5px;
+            }
+        }
+
+        div:last-of-type {
+            padding-top: 20px;
+            text-align: left;
+            width: 700px;
+        }
+    }
+
+    .key-pix {
+        gap: 10px;
+        display: flex;
+        padding: 10px;
+        margin: 0 auto;
+        width:fit-content;
+        border-radius: 10px;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        color: var(--color-level0);
+        background-color: var(--color-level3);
+
+        span {
+            text-shadow: 1px 1px #000;
+        }
+
+        div {
+            display: flex;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #0000001c;
+
+            .key-pix-email {
+                border: none;
+                width: 300px;
+                max-width: 100%;
+                font-size: 16px;
+                font-weight: 500;
+                text-align: center;
+                color: var(--color-level0);
+                border-radius: 10px 0 0 10px;
+            }
+        
+            .btn-copy-pix {
+                border: none;
+                display: flex;
+                cursor: pointer;
+                padding: 7px 10px;
+                align-items: center;
+                color: var(--color-level3);
+                border-radius: 0 10px 10px 0;
+                background-color: var(--color-level1);
+            }
+        
+            .btn-copy-pix:hover {
+                box-shadow: 0px 0px 15px -3px rgba(0, 4, 255, 0.5);
+            }
+        
+            .btn-copy-pix i{
+                margin-left: 5px;
+                color: var(--color-level3);
+            }
+        }
+    }
+}
+
+@media (max-width: 920px) {
+
+    #contribuir {
+        .content-qr-code {
+            .content-phone-camera {
+                display: none;
+            }
+        }
+
+        .key-pix {
+            width: 100%;
+
+            div {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 740px) {
+
+    #contribuir {
+        font-size: 13px;
+        padding: 85px 15px;
+
+        .content-details {
+            flex-direction: column;
+
+            details {
+                width: 100%;
+            }
+        }
+
+        .content-qr-code {
+            flex-direction: column;
+
+            div:last-of-type {
+                width: 100%;
+                text-align: center;
+
+                p {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        .key-pix {
+            div {
+                .key-pix-email {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
