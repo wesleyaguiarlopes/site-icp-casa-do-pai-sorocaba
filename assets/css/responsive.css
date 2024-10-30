@@ -21,30 +21,4 @@
         height: auto;
         width: 98%;
     }
-
-    /* section local */
-
-    #local {
-
-        .btn-waze::after {
-            content: "ir com Waze";
-        }
-
-        .btn-maps::after {
-            content: "ir com Maps";
-        }
-
-    }
-}
-
-@media (max-width: 620px) {
-
-    /* section local */
-
-    #local {
-
-        .title::after {
-            content: "Localização";
-        }
-    }
 }

@@ -37,6 +37,7 @@
         <link rel="stylesheet" type="text/css" href="assets/css/index/photo-gallery.css?v=005">
         <link rel="stylesheet" type="text/css" href="assets/css/index/prayer-request.css?v=005">
         <link rel="stylesheet" type="text/css" href="assets/css/index/contribute.css?v=005">
+        <link rel="stylesheet" type="text/css" href="assets/css/index/local.css?v=005">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css?v=005">
         <link rel="stylesheet" type="text/css" href="assets/css/responsive.css?v=005">
         <link rel="stylesheet" type="text/css" href="assets/css/footer.css?v=005">
@@ -685,8 +686,8 @@
                 <h2 class="title"></h2>
                 <p class="address">Av. Elias Maluf, 1402 - Wanel Ville, Sorocaba - SP, 18055-215</p>
                 <div class="map-buttons">
-                    <a class="btn-waze" href="https://ul.waze.com/ul?place=ChIJ7z-djYr1xZQR9p8-9hJ7L9o&ll=-23.49634470%2C-47.50927190&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location" target="_blank"><i class="fa-brands fa-waze fa-beat-fade"></i></a>
-                    <a class="btn-maps" href="https://maps.google.com/maps?ll=-23.496345,-47.509272&z=15&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=15721920145544617974" target="_blank"><i class="fa-solid fa-location-dot fa-beat-fade"></i></a>
+                    <a class="btn-waze" href="https://ul.waze.com/ul?place=ChIJ7z-djYr1xZQR9p8-9hJ7L9o&ll=-23.49634470%2C-47.50927190&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location" target="_blank"><i class="fa-brands fa-waze"></i></a>
+                    <a class="btn-maps" href="https://maps.google.com/maps?ll=-23.496345,-47.509272&z=15&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=15721920145544617974" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
                 </div>
                 <div class="map-container">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14636.960139053444!2d-47.498090850000004!3d-23.4878622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c5f58a8d9d3fef%3A0xda2f7b12f63e9ff6!2sICP%20Casa%20do%20Pai%20-%20Sorocaba!5e0!3m2!1spt-BR!2sbr!4v1714057987379!5m2!1spt-BR!2sbr"></iframe>
