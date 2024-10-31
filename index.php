@@ -38,8 +38,7 @@
         <link rel="stylesheet" type="text/css" href="assets/css/index/prayer-request.css?v=005">
         <link rel="stylesheet" type="text/css" href="assets/css/index/contribute.css?v=005">
         <link rel="stylesheet" type="text/css" href="assets/css/index/local.css?v=005">
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css?v=005">
-        <link rel="stylesheet" type="text/css" href="assets/css/responsive.css?v=005">
+        <link rel="stylesheet" type="text/css" href="assets/css/index/team.css?v=005">
         <link rel="stylesheet" type="text/css" href="assets/css/footer.css?v=005">
 
         <!-- browser visual settings -->
@@ -268,7 +267,7 @@
                 </div>
             </section>
             <section id="galeria-de-fotos">
-                <div class="content limit-width">
+                <div class="content">
                     <div class="wrapper fourth-album">
                         <div class="view">
                             <div class="gallery">
@@ -693,11 +692,9 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14636.960139053444!2d-47.498090850000004!3d-23.4878622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c5f58a8d9d3fef%3A0xda2f7b12f63e9ff6!2sICP%20Casa%20do%20Pai%20-%20Sorocaba!5e0!3m2!1spt-BR!2sbr!4v1714057987379!5m2!1spt-BR!2sbr"></iframe>
                 </div>
             </section>
-            <section id="team" class="section-default">
-                <h3 class="section-title">Equipe ICP</h3>
-                <div class="team-icp">
-                    <img src="assets/images/photos-icp/team-icp.jpeg" alt="">
-                </div>
+            <section id="team">
+                <h3 class="section-title-team">Equipe ICP</h3>
+                <img class="img-team" src="assets/images/photos-icp/team-icp.jpeg">
             </section>
         </main>
         <footer id="footer">

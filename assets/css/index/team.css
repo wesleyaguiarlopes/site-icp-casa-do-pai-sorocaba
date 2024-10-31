@@ -1,0 +1,37 @@
+#team {
+    display: flex;
+    padding: 30px 10px;
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url('../../images/wallpaper/wallpaper-1.png');
+
+    .section-title-team {
+        font-size: 30px;
+        text-align: center;
+        color: var(--color-level3);
+    }
+
+    .img-team {
+        width: 1000px;
+        max-width: 100%;
+        margin: 20px auto;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 740px) {
+
+    #team {
+        padding: 10px;
+
+        .section-title-team {
+            font-size: 25px;
+        }
+
+        .img-team {
+            margin: 10px auto;
+        }
+    }
+}

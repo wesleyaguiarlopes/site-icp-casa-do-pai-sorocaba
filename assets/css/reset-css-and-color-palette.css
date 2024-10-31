@@ -19,8 +19,6 @@
     --color-level3: #fefefe;
 }
 
-.limit-width {
-    width: 100%;
-    padding: 0 30px;
-    margin: 0 auto;
+body {
+    color: var(--color-level0);
 }
