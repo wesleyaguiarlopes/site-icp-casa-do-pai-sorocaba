@@ -1,11 +1,3 @@
-<?php
-    session_start();
-
-    if(!$_SESSION['username'] == true){
-            unset($_SESSION['username']);
-            header("Location: login");
-    }
-?>
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -14,13 +6,13 @@
 
         <!-- browser visual settings -->
         <link rel="icon" type="image/x-icon" href="assets/images/logotipo/logo_icon_icp-casa-do-pai.ico">
-        <title>Admin | ICP Casa do Pai Sorocaba</title>
+        <title>Mídia | ICP Casa do Pai Sorocaba</title>
         <meta name="description" content="Igreja Comunhão Plena Wannel Ville, na cidade de Sorocaba, propagando o evangelho a toda criatura, para que vivam uma vida plena com Deus nas 7 áreas">
         
         <!-- import -->
         <link rel="stylesheet" type="text/css" href="assets/css/reset-css-and-color-palette.css?v=005">
         <link rel="stylesheet" type="text/css" href="assets/css/header.css?v=005">
-        <link rel="stylesheet" type="text/css" href="assets/css/admin.css?v=005">
+        <link rel="stylesheet" type="text/css" href="assets/css/midia.css?v=005">
         <link rel="stylesheet" type="text/css" href="assets/css/footer.css?v=005">
 
         <!-- import CDN icons -->
@@ -37,12 +29,10 @@
             ?>
         </header>
         <main id="content">
-            <h2 class="title-question">O que deseja fazer?</h2>
+            <h2 class="title-question">O que deseja baixar?</h2>
             <div class="container-btn">
-                <a  class="btn-anchor" href="atualizar-devocional">Atualizar Devocional</a>
-                <a  class="btn-anchor" href="pedidos-de-oracao">Ver Pedidos de Oração</a>
-                <a  class="btn-anchor" href="atualizar-videos">Atualizar Link dos Vídeos</a>
-                <a  class="btn-anchor" href="midia">Baixar arquivos da Mídia</a>
+                <a  class="btn-anchor" href="/assets/midia/video-looping-avisos-icp-sorocaba.mp4" download="video-looping-avisos-icp-sorocaba.mp4">Vídeo Pré e Pós Culto</a>
+                <a  class="btn-anchor" href="/assets/midia/avisos-icp-sorocaba-v1.pptx" download="avisos-icp-sorocaba-v1.pptx">Slide de Avisos</a>
             </div>
         </main>
         <footer id="footer">
