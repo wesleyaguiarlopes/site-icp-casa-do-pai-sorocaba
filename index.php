@@ -123,7 +123,7 @@
                     <h2 class="section-title-cults">CULTOS</h2>
                     <div>
                         <h2>Quarta-Feira <span>às 20h</span></h2>
-                        <p><span>Campanha: </span>Águas Purificadoras</p>
+                        <p><span>Campanha: </span>7 Espíritos de Deus</p>
                         <p class="indicate-the-video">Assista nosso último vídeo deste dia <i class="fa-solid fa-circle-arrow-right"></i></p>
                     </div>
                     <div class="container-video">
@@ -139,7 +139,7 @@
                 <div class="cults-content">
                     <div>
                         <h2>Sexta-Feira <span>às 20h</span></h2>
-                        <p><span>Campanha: </span>Rosas de Sarom</p>
+                        <p><span>Campanha: </span>Restaurando as 12 Portas</p>
                         <p class="indicate-the-video">Assista nosso último vídeo deste dia <i class="fa-solid fa-circle-arrow-right"></i></p>
                     </div>
                     <div class="container-video">
