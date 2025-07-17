@@ -39,10 +39,10 @@
         <main id="content">
             <h2 class="title-question">O que deseja fazer?</h2>
             <div class="container-btn">
+                <a  class="btn-anchor" href="atualizar-live-semanais"><i class="fa-brands fa-youtube"></i> Atualizar Link das Live Semanais</a>
                 <a  class="btn-anchor" href="adicionar-versiculo-e-devocional-diario"><i class="fa-solid fa-book-bible"></i> Adicionar Versículo e Devocional Diário</a>
-                <a  class="btn-anchor" href="pedidos-de-oracao">Ver Pedidos de Oração</a>
-                <a  class="btn-anchor" href="atualizar-live-semanais"><i class="fa-solid fa-video"></i> Atualizar Link das Live Semanais</a>
-                <a  class="btn-anchor" href="midia">Baixar arquivos da Mídia</a>
+                <a  class="btn-anchor" href="pedidos-de-oracao"><i class="fa-solid fa-person-praying"></i> Ver Pedidos de Oração</a>
+                <a  class="btn-anchor" href="midia"><i class="fa-solid fa-file-arrow-down"></i> Baixar arquivos da Mídia</a>
             </div>
         </main>
         <footer id="footer">

@@ -13,22 +13,32 @@
     }
 
     .container-btn {
-        background-color: var(--color-level3);
-        border-radius: 10px;
+        gap: 10px;
+        width: auto;
+        display: flex;
         padding: 10px;
         margin: 0 15px;
-
-        display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-
+        border-radius: 10px;
+        justify-content:flex-start;
+        background-color: var(--color-level3);
+        
         .btn-anchor {
+            gap: 5px;
+            flex-grow: 1;
             padding: 10px;
+            display: flex;
+            transition: all .3s;
+            align-items: center;
             border-radius: 10px;
             text-decoration: none;
-            background-color: #e0e0e0;
+            justify-content: center;
             color: var(--color-level0);
+            background-color: #e0e0e0;
+
+            i {
+                font-size: 20px;
+            }
         }
 
         .btn-anchor:hover {
@@ -47,6 +57,7 @@
                 width: 100%;
                 text-align: center;
                 font-size: 14px;
+                flex-direction: column;
             }
         }
     }
