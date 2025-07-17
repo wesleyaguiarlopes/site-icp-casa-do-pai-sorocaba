@@ -1,7 +1,7 @@
 <?php
     session_start();
 
-    if(!$_SESSION['username'] == true){
+    if(!$_SESSION['username']){
             unset($_SESSION['username']);
             header("Location: login");
     }
@@ -9,16 +9,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <!-- open graph -->
-
-        <!-- open graph - update verse of the day and daily devotional -->
-        <meta property="og:title" content="Atualizar Versículo e Devocional">
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://www.comunhaoplenasorocaba.com.br/atualizar-devocional">
-        <meta property="og:description" content="Formulário para atulizar o Versículo do Dia e Devocional Diário">
-        <meta property="og:site_name" content="ICP Casa do Pai Sorocaba">
-        <meta property="og:image" content="https://i.ibb.co/BPK6rCm/open-graph-update-devotional-verse.webp">
-
         <!-- import -->
         <link rel="stylesheet" type="text/css" href="assets/css/reset-css-and-color-palette.css?v=005">
         <link rel="stylesheet" type="text/css" href="assets/css/header.css?v=005">
@@ -26,9 +16,8 @@
         <link rel="stylesheet" type="text/css" href="assets/css/footer.css?v=005">
 
         <!-- browser visual settings -->
-        <link rel="icon" type="image/x-icon" href="assets/images/logotipo/logo_icon_icp-casa-do-pai.ico">
-        <title>Atualizar Versículo & Devocional | ICP Casa do Pai Sorocaba</title>
-        <meta name="description" content="Formulário para atualização diária do Versículo do Dia e Devocional Diário">
+        <title>Adicionar Versículo & Devocional | ICP Casa do Pai Sorocaba</title>
+        <meta name="description" content="Formulário para adicionar o Versículo do Dia e Devocional Diário">
 
         <!-- browser background settings -->
         <meta charset="utf-8">
@@ -40,8 +29,7 @@
 
         <!-- additional information -->
         <meta name="copyright" content="© 2024 Igreja Comunhão Plena">
-        <meta name="author" content="Evandro Lopes">
-        <meta name="author" content="Wesley Lopes">
+        <meta name="author" content="Wesley Aguiar Lopes - Walps">
 
         <!-- import CDN icons -->
         <script src="https://kit.fontawesome.com/d5ee391d5f.js" crossorigin="anonymous"></script>
@@ -58,8 +46,8 @@
         </header>
         <main id="content">
             <section id="update-devotional-verse">
-                <form class="update-form" action="/assets/php/update-devotional-verse" method="POST">
-                    <h2 class="title">Atualizar</h2>
+                <form class="update-form" action="/assets/php/add-verse-and-daily-devotional" method="POST">
+                    <h2 class="title">Adicionar</h2>
                     <h3 class="subtitle">Versículo e Devocional</h3>
                     <div class="group">
                         <div class="items-form">
@@ -94,18 +82,10 @@
                         </label>
                         <textarea name="daily-devotional-text" rows="5" placeholder="Ex: Em outras palavras, o ladrão representa o falso líder religioso, os quais, semelhantemente aos fariseus que expulsaram da sinagoga ao que havia sido curado..." required autocomplete="off"></textarea>
                     </div>
-                    <div class="group">
-                        <div class="items-form author">
-                            <label for="author-name">Autor do Devocional
-                                <span class="asterisk">*</span>
-                            </label>
-                            <input type="text" name="author-name" placeholder="Informe como quer ser reconhecido" required autocomplete="off">
-                        </div>
-                    </div>
                     <div class="btn-form">
-                        <button type="submit" name="btn-update-devotional-verse" title="Clique para Atualizar o Versículo do Dia e o Devocional Diário">
-                            <i class="fa-solid fa-rotate-right"></i>
-                            Atualizar
+                        <button type="submit" name="btn-add-verse-and-daily-devotional" title="Clique para Adicionar o Versículo do Dia e o Devocional Diário">
+                            <i class="fa-solid fa-plus"></i>
+                            Adicionar
                         </button>
                         <button type="reset" title="Clique para Limpar os Campos">
                             <i class="fa-solid fa-broom"></i>
