@@ -5,27 +5,29 @@
         unset($_SESSION['username']);
         header("Location: ../../login");
     } else {
-        if(isset($_POST['btnSunday'])){
-            $newURL = $_POST['sunday'];
-            $sql = "UPDATE tb_url SET urlSunday = '$newURL' where id = 1";
-            $week = "Culto de Domingo";
-        }
-    
-        if(isset($_POST['btnWednesday'])){
-            $newURL = $_POST['wednesday'];
-            $sql = "UPDATE tb_url SET urlWednesday = '$newURL' where id = 1";
-            $week = "Culto de Quarta-Feira";
-        }
-    
-        if(isset($_POST['btnFriday'])){
-            $newURL = $_POST['friday'];
-            $sql = "UPDATE tb_url SET urlFriday = '$newURL' where id = 1";
-            $week = "Culto de Sexta-Feira";
+        if(isset($_POST['btn-update-live-link'])){
+            $new_url = $_POST['new-url'];
+            $worship_date = $_POST['worship-date'];
+            $id_of_the_week = $_POST['day-of-the-week'];
+
+            $sql = "UPDATE weekly_live_urls SET live_video_url = '$new_url', last_update = '$worship_date' where id = '$id_of_the_week'";
+            
+            switch($id_of_the_week){
+                case 1:
+                    $week = "Culto de Domingo";
+                    break;
+                case 2:
+                    $week = "Culto de Quarta-Feira";
+                    break;
+                case 3:
+                    $week = "Culto de Sexta-Feira";
+                    break;
+            }
         }
     
         include_once('database-connection.php');
     
-        $result = mysqli_query($con, $sql);
+        $result = $con->query($sql);
     
         if($result){
             echo "
@@ -47,6 +49,14 @@
                         box-sizing: border-box;
                         font-family: sans-serif;
                     }
+
+                    body {
+                        height: 100vh;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-image: linear-gradient(to top, #254e70 0%, #5E88BA 100%);
+                    }
     
                     #modal-success {
                         border: none;
@@ -54,8 +64,7 @@
                         width: 100%;
                         max-width: 500px;
                         height: 200px;
-                        margin: 0 auto;
-                        top: 10vh;
+                        margin: auto;
                         
                         display: flex;
                         flex-direction: column;
@@ -95,14 +104,14 @@
     
                     btnClose.onclick = function() {
                         modalSuccess.close();
-                        location.href='../../atualizar-videos';
+                        location.href='../../atualizar-live-semanais';
                     }
     
                 </script>;";
         } else {
             echo "
                 <script>
-                    location.href='../../atualizar-videos';
+                    location.href='../../atualizar-live-semanais';
                     alert('Falha para atualizar a URL');
                 </script>;";
         }

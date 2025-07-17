@@ -41,7 +41,7 @@
             <div class="container-btn">
                 <a  class="btn-anchor" href="atualizar-devocional">Atualizar Devocional</a>
                 <a  class="btn-anchor" href="pedidos-de-oracao">Ver Pedidos de Oração</a>
-                <a  class="btn-anchor" href="atualizar-videos">Atualizar Link dos Vídeos</a>
+                <a  class="btn-anchor" href="atualizar-live-semanais"><i class="fa-solid fa-video"></i> Atualizar Link das Live Semanais</a>
                 <a  class="btn-anchor" href="midia">Baixar arquivos da Mídia</a>
             </div>
         </main>

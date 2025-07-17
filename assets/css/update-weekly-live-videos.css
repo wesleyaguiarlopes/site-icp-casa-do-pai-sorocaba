@@ -1,0 +1,208 @@
+#content {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to top, #254e70 0%, #5E88BA 100%);
+
+    #update-videos {
+        gap: 15px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 105px 15px 0 15px;
+
+        legend {
+            padding: 0 3px;
+            margin-left: 10px;
+        }
+        
+        .update-form {
+            padding: 5px;
+            max-width: 600px;
+            border-radius: 10px;
+            background-color: var(--color-level3);
+
+            .title {
+                font-size: 20px;
+                text-align: center;
+            }
+
+            .update-content {
+                gap: 10px;
+                flex-wrap: wrap;
+                border-radius: 10px;
+
+                .container-video {
+                    gap: 10px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    border-radius: 10px;
+
+                    .link-area {
+                        flex-grow: 2;
+                        display: flex;
+                        border-radius: 10px;
+                        border: 1px solid #8a8a8a;
+
+                        textarea {
+                            width: 100%;
+                            resize: none;
+                            border: none;
+                            padding: 10px;
+                            border-radius: 10px;
+                            background-color: #F0F0F0;
+                        }
+
+                        textarea:focus {
+                            outline: 1px solid var(--color-level1);
+                        }
+                    }
+
+                    .video-preview {
+                        width: 100%;
+                        border-radius: 10px;
+                        border: 1px solid #8a8a8a;
+
+                        .video-wrapper {
+                            overflow: hidden;
+                            position: relative;
+                            border-radius: 10px;
+                            padding-bottom: 56.25%;
+
+                            iframe {
+                                border: 0;
+                                width: 100%;
+                                height: 100%;
+                                position: absolute;
+                            }
+                        }
+                    }
+                }
+
+                .entrance-area {
+                    gap: 10px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    border-radius: 10px;
+                    border: 1px solid #8a8a8a;
+
+                    .day-of-the-week {
+                        flex-grow: 2;
+                        padding: 10px;
+                        font-size: 16px;
+                        text-align: center;
+                        border-radius: 10px 10px 10px 9px;
+                        background-color: #f0f0f0;
+                    }
+
+                    .day-of-the-week:hover {
+                        cursor: pointer;
+                    }
+
+                    .worship-date {
+                        flex-grow: 2;
+                        padding: 10px;
+                        text-align: center;
+                        border-radius: 10px;
+                        border: 1px solid #8a8a8a;
+                        font-size: 16px;
+                    }
+
+                    .btn-update-live-link {
+                        border: none;
+                        flex-grow: 1;
+                        padding: 10px;
+                        font-size: 16px;
+                        border-radius: 10px 10px 9px 10px;
+                        color: var(--color-level3);
+                        background-color: var(--color-level1);
+                    }
+
+                    .btn-update-live-link:hover {
+                        cursor: pointer;
+                        background-color: #3171a8;
+                    }
+
+                    i {
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+
+        .current-videos-of-the-week {
+            width: 100%;
+            padding: 5px;
+            max-width: 300px;
+            border-radius: 10px;
+            background-color: var(--color-level3);
+
+            .container-video {
+                position: relative;
+                border-radius: 7px;
+                padding-bottom: 56.25%;
+                border: 1px solid #9c9c9c;
+
+                legend {
+                    padding: 3px;
+                    border-radius: 8px;
+                    border: 1px solid #8a8a8a;
+
+                    .live-logo {
+                        padding: 1px 3px;
+                        border-radius: 5px;
+                        color: var(--color-level3);
+                        background-color: var(--color-red-youtube);
+                    }
+                }
+
+                iframe {
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    border: none;
+                    margin: auto;
+                    position: absolute;
+                    border-radius: 5px;
+                    width: calc(100% - 5px);
+                    height: calc(100% - 6px);
+                }
+            }
+        }
+    }
+}
+
+@media(width < 935px){
+    #content {
+        #update-videos {
+            .current-videos-of-the-week {
+                max-width: 590px;
+            }
+        }
+    }
+}
+
+@media(width < 500px){
+    #content {
+        font-size: 13px;
+
+        #update-videos {
+            legend {
+                text-align: center;
+            }
+
+            .update-form {
+                .update-content {
+                    .entrance-area {
+                        .day-of-the-week, .worship-date, .btn-update-live-link {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
