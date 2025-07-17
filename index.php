@@ -1,11 +1,6 @@
 <?php
     include_once('assets/php/database-connection.php');
 
-    $sql = "select * from tb_devotionalverse where 1";
-    $resultado = $con->query($sql);
-    $row = $resultado->fetch_object();
-    $rs = mysqli_query($con, $sql);
-
     session_start();
 ?>
 <!DOCTYPE html>
@@ -88,12 +83,7 @@
                 </dialog>
             </section>
             <section id="verse-day">
-                <div class="container">
-                    <h3 class="title">Versículo do dia</h3>
-                    <p class="text"><i class="fa-solid fa-quote-left"></i> <?php print $row->textVerseOfTheDay; ?> <i class="fa-solid fa-quote-right"></i></p>
-                    <p class="book-chapter-verse"><?php print $row->bibleBook; ?><span class="version">  <?php print $row->bibleVersion; ?></span></p>
-                    <a class="btn-devotional" href="devocional">ler o devocional<i class="fa-solid fa-arrow-right fa-fade"></i></a>
-                </div>
+                <?php include_once('assets/php/index/get-data-from-verse-of-the-day.php'); ?>
             </section>
             <section id="cultos">
                 <?php include_once('assets/php/index/get-the-data-from-lives.php'); ?>

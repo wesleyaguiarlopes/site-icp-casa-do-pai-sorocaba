@@ -1,49 +1,51 @@
 #verse-day {
     width: 100%;
     height: auto;
-    background-color: #F0F4F9;
     padding: 0 15px;
     transition: .5s;
+    position: relative;
+    background-image: linear-gradient(to bottom, #cfd9df 0%, #e2ebf0 100%);
 
     .container {
-        background-color: #ffffff;
-        max-width: 100%;
+        top: -80px;
         width: 700px;
         margin: auto;
+        display: flex;
         padding: 20px;
+        transition: .3s;
+        max-width: 100%;
+        position: relative;
+        align-items: center;
         border-radius: 30px;
+        flex-direction: column;
+        background-color: #ffffff;
         box-shadow: 0px 0px 10px -3px rgba(0,0,0,0.1);
 
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        transition: .3s;
-
         .title {
+            font-size: 25px;
             text-align: center;
             margin-bottom: 10px;
-            font-size: 25px;
         }
 
         .text {
-            margin-bottom: 10px;
             text-align: center;
+            margin-bottom: 10px;
         }
 
         .book-chapter-verse {
-            margin-bottom: 10px;
-            text-align: center;
             font-size: 20px;
+            text-align: center;
+            margin-bottom: 10px;
         }
 
         .btn-devotional {
-            background-color: var(--color-level1);
-            color: var(--color-level3);
-            border-radius: 10px;
-            text-decoration: none;
             font-size: 15px;
             font-weight: 300;
             padding: 8px 14px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: var(--color-level3);
+            background-color: var(--color-level1);
             box-shadow: -2px 2px 4px 0px rgba(0, 0, 0, 0.3);
         }
 
@@ -60,5 +62,13 @@
 #verse-day {
     .container:hover {
         box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.3);
+    }
+}
+
+@media(width < 700px){
+    #verse-day {
+        .text {
+            font-size: 0.8em;
+        }
     }
 }
