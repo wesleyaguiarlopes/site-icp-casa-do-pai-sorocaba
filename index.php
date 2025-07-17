@@ -6,12 +6,6 @@
     $row = $resultado->fetch_object();
     $rs = mysqli_query($con, $sql);
 
-    $sql1 = "select * from tb_url where 1";
-    $resultado1 = $con->query($sql1);
-    $row1 = $resultado1->fetch_object();
-    $rs1 = mysqli_query($con, $sql1);
-
-    mysqli_close($con);
     session_start();
 ?>
 <!DOCTYPE html>
@@ -32,7 +26,7 @@
         <link rel="stylesheet" type="text/css" href="assets/css/header.css?v=005">
         <link rel="stylesheet" type="text/css" href="assets/css/home.css?v=005">
         <link rel="stylesheet" type="text/css" href="assets/css/index/verse-day.css?v=005">
-        <link rel="stylesheet" type="text/css" href="assets/css/index/our-cults.css?v=005">
+        <link rel="stylesheet" type="text/css" href="assets/css/index/latest-live-services.css?v=005">
         <link rel="stylesheet" type="text/css" href="assets/css/index/seven-areas-of-full-life.css?v=005">
         <link rel="stylesheet" type="text/css" href="assets/css/index/photo-gallery.css?v=005">
         <link rel="stylesheet" type="text/css" href="assets/css/index/prayer-request.css?v=005">
@@ -102,56 +96,7 @@
                 </div>
             </section>
             <section id="cultos">
-                <div class="cults-content">
-                    <div>
-                        <h2>Domingo <span>às 20h</span></h2>
-                        <p>Culto da Família</p>
-                        <p class="indicate-the-video">Assista nosso último vídeo deste dia <i class="fa-solid fa-circle-arrow-right"></i></p>
-                    </div>
-                    <div class="container-video">
-                        <iframe
-                            src="<?php print $row1->urlSunday; ?>"
-                            title="YouTube video player"
-                            allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin"
-                            allowullscreen>
-                        </iframe>
-                    </div>
-                </div>
-                <div class="cults-content">
-                    <h3 class="section-title-our">NOSSOS</h3>
-                    <h2 class="section-title-cults">CULTOS</h2>
-                    <div>
-                        <h2>Quarta-Feira <span>às 20h</span></h2>
-                        <p><span>Campanha: </span>7 Espíritos de Deus</p>
-                        <p class="indicate-the-video">Assista nosso último vídeo deste dia <i class="fa-solid fa-circle-arrow-right"></i></p>
-                    </div>
-                    <div class="container-video">
-                        <iframe
-                            src="<?php print $row1->urlWednesday; ?>"
-                            title="YouTube video player"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" r
-                            ferrerpolicy="strict-origin-when-cross-origin"
-                            allowullscreen>
-                        </iframe>
-                    </div>
-                </div>
-                <div class="cults-content">
-                    <div>
-                        <h2>Sexta-Feira <span>às 20h</span></h2>
-                        <p><span>Campanha: </span>Restaurando as 12 Portas</p>
-                        <p class="indicate-the-video">Assista nosso último vídeo deste dia <i class="fa-solid fa-circle-arrow-right"></i></p>
-                    </div>
-                    <div class="container-video">
-                        <iframe
-                            src="<?php print $row1->urlFriday; ?>"
-                            title="YouTube video player"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" r
-                            ferrerpolicy="strict-origin-when-cross-origin"
-                            allowullscreen>
-                        </iframe>
-                    </div>
-                </div>
+                <?php include_once('assets/php/index/get-the-data-from-lives.php'); ?>
             </section>
             <section id="nossas-fotos">
                 <div id="gallery-primary">
@@ -711,3 +656,6 @@
         <script src="assets/js/contribute.js"></script>
     </body>
 </html>
+<?php
+    $con->close();
+?>
