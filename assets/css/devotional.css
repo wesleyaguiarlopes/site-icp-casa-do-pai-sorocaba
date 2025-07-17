@@ -1,5 +1,7 @@
 #daily-devotional {
-    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 148px);
 
     .content-verse-of-the-day {
         gap: 30px;
@@ -48,30 +50,11 @@
         width: 100%;
         max-width: 700px;
         line-height: 35px;
-        padding: 50px 10px;
+        padding: 50px 10px 0 10px;
         position: relative;
         text-align: center;
-        margin: 0 auto 90px auto;
+        margin: 0 auto;
         color: var(--color-level0);
-
-        .author {
-            left: 0;
-            right: 0;
-            bottom: -35px;
-            margin: 0 auto;
-            padding: 0 10px;
-            font-size: 14px;
-            font-weight: 300;
-            position: absolute;
-            width: fit-content;
-            border-radius: 10px;
-            background-color: #fafafa;
-            border-left: 3px solid var(--color-level0);
-
-            i {
-                font-size: 15px;
-            }
-        }
     }
 
     .content-devotional-text::first-letter {
@@ -83,16 +66,35 @@
         margin: 0 5px;
         font-size: 26px;
     }
+
+    .content-back-button {
+        display: flex;
+        justify-content: center;
+        margin: 30px 0 50px 0;
+
+        .to-go-back {
+            display: flex;
+            padding: 10px;
+            align-items: center;
+            border-radius: 10px;
+            transition: all 0.5s;
+            text-decoration: none;
+            justify-content: center;
+            color: var(--color-level3);
+            background-color: var(--color-level2);
+            box-shadow: 0px 10px 20px -3px rgba(0,0,0,0.1);
+        }
+
+         .to-go-back:hover {
+            background-color: var(--color-level1);
+         }
+    }
 }
 
 @media(max-width: 740px) {
-
     #daily-devotional {
-        min-height: 100vh;
-
         .content-verse-of-the-day {
-            gap: 30px;
-            padding: 110px 10px 55px 10px;
+            padding: 110px 20px 55px 10px;
             background-position: center top;
 
             .text-verse {
@@ -110,21 +112,20 @@
         .content-devotional-text {
             font-size: 14px;
             line-height: 30px;
-            padding: 50px 20px;
+            padding: 50px 20px 0 20px;
             letter-spacing: 1px;
             text-align: justify;
-
-            .author {
-                font-size: 12px;
-            }
         }
 
         .content-devotional-text::first-letter {
             font-size: 40px;
         }
 
-        .fa-solid {
-            font-size: 26px;
+        .content-back-button {
+            .to-go-back {
+                padding: 7px;
+                font-size: 0.8em;
+            }
         }
     }
 }

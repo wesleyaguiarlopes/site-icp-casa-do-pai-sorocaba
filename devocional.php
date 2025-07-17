@@ -1,20 +1,12 @@
 <?php
-    include_once('assets/php/database-connection.php');
-
-    $sql = "select * from tb_devotionalverse where 1";
-    $resultado = $con->query($sql);
-    $row = $resultado->fetch_object();
-    $rs = mysqli_query($con, $sql);
-    mysqli_close($con);
+    include_once('assets/php/get-data-from-daily-devotional.php');
     session_start();
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
         <!-- open graph -->
-
-        <!-- og - devotional -->
-        <meta property="og:title" content="Devocional | ICP Casa do Pai Sorocaba">
+        <meta property="og:title" content="Devocional Diário | ICP Casa do Pai Sorocaba">
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://www.comunhaoplenasorocaba.com.br/devocional">
         <meta property="og:description" content="Seja edificado com a palavra, através do devocional que preparamos para você">
@@ -23,7 +15,7 @@
 
         <!-- browser visual settings -->
         <link rel="icon" type="image/x-icon" href="assets/images/logotipo/logo_icon_icp-casa-do-pai.ico">
-        <title>Devocional | ICP Casa do Pai Sorocaba</title>
+        <title>Devocional Diário | ICP Casa do Pai Sorocaba</title>
         <meta name="description" content="Seja edificado com a palavra, através do devocional que preparamos para você">
 
         <!-- browser background settings -->
@@ -64,18 +56,23 @@
                 <div class="content-verse-of-the-day">
                     <p class="text-verse">
                         <i class="fa-solid fa-quote-left"></i>
-                        <?php print $row->textVerseOfTheDay; ?>
+                        <?php print $daily_devotional_data->text_verse_of_the_day; ?>
                         <i class="fa-solid fa-quote-right"></i>
                     </p>
                     <p class="book-verse">
                         <i class="fa-solid fa-book-bible"></i>
-                        <?php print $row->bibleBook; ?> - <?php print $row->bibleVersion; ?>
+                        <?php print $daily_devotional_data->bible_book; ?> - <?php print $daily_devotional_data->bible_version; ?>
                     </p>
                     <h3 class="devotional-section-title">Devocional</h3>
                 </div>
                 <div class="content-devotional-text">
-                    <p><?php print $row->dailyDevotionalText; ?></p>
-                    <p class="author"><?php print $row->authorName; ?>...<i class="fa-solid fa-pen-clip"></i></p>
+                    <p><?php print $daily_devotional_data->daily_devotional_text; ?></p>
+                </div>
+                <div class="content-back-button">
+                    <a class="to-go-back" href="/">
+                        <i class="fa-solid fa-angle-left"></i>
+                        <p>voltar</p>
+                    </a>
                 </div>
             </section>
         </main>
