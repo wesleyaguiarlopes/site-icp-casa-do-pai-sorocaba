@@ -9,6 +9,4 @@
             $video_url_of_this_week_update_date[] = $row["last_update"] ? date('d/m', strtotime($row["last_update"])) : '';
         }
     }
-
-    $con->close();
 ?>

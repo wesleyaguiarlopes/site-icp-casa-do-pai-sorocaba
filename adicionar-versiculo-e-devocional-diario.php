@@ -5,15 +5,18 @@
             unset($_SESSION['username']);
             header("Location: login");
     }
+
+    include_once('assets/php/database-connection.php');
+    include_once('assets/php/get-the-value-from-the-stash-versioning.php');
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
         <!-- import -->
-        <link rel="stylesheet" type="text/css" href="assets/css/reset-css-and-color-palette.css?v=005">
-        <link rel="stylesheet" type="text/css" href="assets/css/header.css?v=005">
-        <link rel="stylesheet" type="text/css" href="assets/css/update-devotional-verse.css?v=005">
-        <link rel="stylesheet" type="text/css" href="assets/css/footer.css?v=005">
+        <link rel="stylesheet" type="text/css" href="assets/css/reset-css-and-color-palette.css?v=<?php print $webpage_data->cache_versioning; ?>">
+        <link rel="stylesheet" type="text/css" href="assets/css/header.css?v=<?php print $webpage_data->cache_versioning; ?>">
+        <link rel="stylesheet" type="text/css" href="assets/css/update-devotional-verse.css?v=<?php print $webpage_data->cache_versioning; ?>">
+        <link rel="stylesheet" type="text/css" href="assets/css/footer.css?v=<?php print $webpage_data->cache_versioning; ?>">
 
         <!-- browser visual settings -->
         <title>Adicionar Versículo & Devocional | ICP Casa do Pai Sorocaba</title>
@@ -103,6 +106,9 @@
         </footer>
 
         <!-- import javascript -->
-        <script src="assets/js/script.js?v=005"></script>
+        <script src="assets/js/script.js?v=<?php print $webpage_data->cache_versioning; ?>"></script>
     </body>
 </html>
+<?php
+    $con->close();
+?>

@@ -7,16 +7,17 @@
     }
 
     include_once('assets/php/database-connection.php');
+    include_once('assets/php/get-the-value-from-the-stash-versioning.php');
     include_once('assets/php/get-the-url-of-the-videos-of-the-week.php');
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
         <!-- import -->
-        <link rel="stylesheet" type="text/css" href="assets/css/reset-css-and-color-palette.css?v=005">
-        <link rel="stylesheet" type="text/css" href="assets/css/header.css?v=005">
-        <link rel="stylesheet" type="text/css" href="assets/css/update-weekly-live-videos.css?v=005">
-        <link rel="stylesheet" type="text/css" href="assets/css/footer.css?v=005">
+        <link rel="stylesheet" type="text/css" href="assets/css/reset-css-and-color-palette.css?v=<?php print $webpage_data->cache_versioning; ?>">
+        <link rel="stylesheet" type="text/css" href="assets/css/header.css?v=<?php print $webpage_data->cache_versioning; ?>">
+        <link rel="stylesheet" type="text/css" href="assets/css/update-weekly-live-videos.css?v=<?php print $webpage_data->cache_versioning; ?>">
+        <link rel="stylesheet" type="text/css" href="assets/css/footer.css?v=<?php print $webpage_data->cache_versioning; ?>">
 
         <!-- browser visual settings -->
         <link rel="icon" type="image/x-icon" href="assets/images/logotipo/logo_icon_icp-casa-do-pai.ico">
@@ -127,7 +128,10 @@
         </footer>
 
         <!-- import javascript -->
-        <script src="/assets/js/script.js?v=005"></script>
-        <script src="assets/js/get-value-from-src-attribute.js?v=005"></script>
+        <script src="/assets/js/script.js?v=<?php print $webpage_data->cache_versioning; ?>"></script>
+        <script src="assets/js/get-value-from-src-attribute.js?v=<?php print $webpage_data->cache_versioning; ?>"></script>
     </body>
 </html>
+<?php
+    $con->close();
+?>

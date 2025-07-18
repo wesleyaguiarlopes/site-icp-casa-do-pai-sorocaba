@@ -1,6 +1,9 @@
 <?php
-    include_once('assets/php/get-data-from-daily-devotional.php');
     session_start();
+
+    include_once('assets/php/database-connection.php');
+    include_once('assets/php/get-the-value-from-the-stash-versioning.php');
+    include_once('assets/php/get-data-from-daily-devotional.php');
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -33,10 +36,10 @@
         <meta name="author" content="Wesley Lopes">
 
         <!-- import -->
-        <link rel="stylesheet" type="text/css" href="assets/css/reset-css-and-color-palette.css?v=005">
-        <link rel="stylesheet" type="text/css" href="assets/css/header.css?v=005">
-        <link rel="stylesheet" type="text/css" href="assets/css/devotional.css?v=005">
-        <link rel="stylesheet" type="text/css" href="assets/css/footer.css?v=005">
+        <link rel="stylesheet" type="text/css" href="assets/css/reset-css-and-color-palette.css?v=<?php print $webpage_data->cache_versioning; ?>">
+        <link rel="stylesheet" type="text/css" href="assets/css/header.css?v=<?php print $webpage_data->cache_versioning; ?>">
+        <link rel="stylesheet" type="text/css" href="assets/css/devotional.css?v=<?php print $webpage_data->cache_versioning; ?>">
+        <link rel="stylesheet" type="text/css" href="assets/css/footer.css?v=<?php print $webpage_data->cache_versioning; ?>">
 
         <!-- import CDN icons -->
         <script src="https://kit.fontawesome.com/d5ee391d5f.js" crossorigin="anonymous"></script>
@@ -84,6 +87,9 @@
         </footer>
 
         <!-- import javascript -->
-        <script src="assets/js/script.js?v=005"></script>
+        <script src="assets/js/script.js?v=<?php print $webpage_data->cache_versioning; ?>"></script>
     </body>
 </html>
+<?php
+    $con->close();
+?>
