@@ -2,52 +2,38 @@ footer {
     width: 100%;
     padding: 15px;
     background-color: #254e70;
-    position: sticky;
-    bottom: -1;
-    
+
     .content {
-        border-radius: 10px;
         position: relative;
+        border-radius: 10px;
         padding: 10px 0 60px 0;
         background-color: var(--color-level3);
-        
+
         p {
             text-align: center;
-            
-            span {
+
+            #church-name {
                 font-weight: bold;
                 color: var(--color-level1);
             }
         }
 
-        .btn-admin-access {
-            background-color: #e0e0e0;
-            color: var(--color-level0);
-            border-radius: 10px;
-            padding: 10px;
-            text-decoration: none;
-            position: absolute;
+        #btn_admin-access {
+            border: none;
             right: 10px;
             bottom: 10px;
+            padding: 10px;
+            position: absolute;
+            transition: all 1s;
+            border-radius: 10px;
+            text-decoration: none;
+            color: var(--color-level3);
+            background-color: var(--color-level2);
         }
 
-        .btn-admin-access:hover {
+        #btn_admin-access:hover {
             color: var(--color-level3);
             background-color:  var(--color-level1);
-        }
-    }
-}
-
-@media (max-width: 945px) {
-
-    footer {
-        .content {
-    
-            .btn-admin-access
-             {
-                color: var(--color-level3);
-                background-color:  var(--color-level1);
-            }
         }
     }
 }
@@ -58,8 +44,7 @@ footer {
         font-size: 12px;
 
         .content {
-    
-            .btn-admin-access {
+            #btn_admin-access {
                 right: 3px;
                 bottom: 3px;
             }
