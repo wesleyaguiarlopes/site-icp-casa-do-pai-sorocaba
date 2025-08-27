@@ -3,6 +3,7 @@
 
     include_once('assets/php/database-connection.php');
     include_once('assets/php/get-the-value-from-the-stash-versioning.php');
+    include_once('assets/php/index/webpage-data.php');
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -64,24 +65,14 @@
             ?>
         </header>
         <main id="content">
-            <section id="home" class="overlay">
-                <div class="church-name-and-apostolic-year">
-                    <h1 class="church-name"><span>ICP</span> Casa do Pai <span>Sorocaba</span></h1>
-                    <h2 class="apostolic-year"><span>ano apostólico de</span> Pentecostes</h2>
+            <section id="home">
+                <div class="church-information">
+                    <img class="sign-icp-casa-do-pai" src="assets/images/logotipo/sign-icp-casa-do-pai.png" alt="Letreiro ICP Casa do Pai Sorocaba">
+                    <p class="text-apostolic-year"><?php print $webpage_data->phrase_of_the_year; ?></p>
                 </div>
-                <p class="text-apostolic-year">... todos ficaram cheios do Espírito Santo e começaram a falar em outras línguas ... Atos 2:4 NVT</p>
-                <button class="btn-text-apostolic-year">
-                    <i class="fa-solid fa-book-bible"></i>
-                    Ler <span>Atos 2 : 1 ao 4</span>
-                </button>
-                <dialog id="dg-text-apostolic-year">
-                    <button class="btn-closed-text-apostolic-year"><i class="fa-solid fa-xmark"></i></button>
-                    <h2 class="book-chapter-verse-version">Atos 2:1-4 NVT</h2>
-                    <p class="verse"><span class="verse-number">1 - </span>No dia de Pentecostes, todos estavam reunidos num só lugar.</p>
-                    <p class="verse"><span class="verse-number">2 - </span>De repente, veio do céu um som como o de um poderoso vendaval e encheu a casa onde estavam sentados.</p>
-                    <p class="verse"><span class="verse-number">3 - </span>Então surgiu algo semelhante a chamas ou línguas de fogo que pousaram sobre cada um deles.</p>
-                    <p class="verse"><span class="verse-number">4 - </span>Todos ficaram cheios do Espírito Santo e começaram a falar em outras línguas, conforme o Espírito os habilitava.</p>
-                </dialog>
+                <div class="calendar">
+                    <?php include_once('assets/php/index/calendar-data.php'); ?>
+                </div>
             </section>
             <section id="verse-day">
                 <?php include_once('assets/php/index/get-data-from-verse-of-the-day.php'); ?>

@@ -1,195 +1,156 @@
 #home {
-    width: 100%;
-    height: 100vh;
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    text-align: center;
+    align-items: center;
+    padding: 0 15px 130px 15px;
     background-size: cover;
+    color: var(--color-level3);
     background-position: center;
     background-repeat: no-repeat;
-    background-image: linear-gradient(to bottom, #00000090 55%, #f0f4f9 100%), url('../images/banner-sky.jpg');
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    color: var(--color-level3);
-    text-align: center;
-    padding: 10px;
+    background-attachment: fixed;
+    justify-content: space-evenly;
+    background-image: linear-gradient(to bottom, #00000090 55%, #f0f4f9 100%), url('../images/home-screen-wallpaper.webp');
 
-    .church-name-and-apostolic-year {
-        line-height: 65px;
-
-        .church-name {
-            font-size: 95px;
-            font-weight: 600;
+    .church-information {
+        .sign-icp-casa-do-pai {
+            width: 100%;
+            max-width: 600px;
         }
 
-        .apostolic-year {
-            font-size: 75px;
-            font-weight: 600;
-        }
-
-        span {
-            font-size: 35px;
-            font-weight: 100;
-            vertical-align: middle;
+        .text-apostolic-year {
+            width: 100%;
+            max-width: 550px;
+            line-height: 20px;
+            margin-top: 20px;
         }
     }
 
-    .text-apostolic-year {
-        margin: 20px 0;
-    }
+    .calendar {
+        gap: 10px;
+        width: 100%;
+        display: flex;
+        max-width: 600px;
+        flex-direction: column;
 
-    .btn-text-apostolic-year{
-        border: none;
-        background-color: var(--color-level1);
-        color: var(--color-level3);
-        border-radius: 10px;
-        font-size: 15px;
-        font-weight: 300;
-        padding: 8px 14px;
-
-        span {
-            font-weight: 500;
-        }
-    }
-
-    .btn-text-apostolic-year:hover {
-        background-color: #296eaa;
-    }
-
-    dialog {
-        margin: auto;
-        padding: 40px;
-        max-width: 520px;
-        text-align: left;
-        border-radius: 10px;
-
-        .book-chapter-verse-version {
-            margin-bottom: 10px;
-        }
-
-        .verse-number {
-            color: var(--color-level1);
-        }
-
-        .verse {
-            margin-top: 10px;
-        }
-
-        .btn-closed-text-apostolic-year {
-            border-radius: 10px;
-            padding: 10px 14px;
-            font-size: 24px;
-            position: absolute;
-            top: 10px;
-            right: 10px;
+        .diary-card {
+            gap: 5px;
+            padding: 5px;
             display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 2px solid var(--color-level1);
+            border-radius: 20px;
+            transition: background 1s;
+            backdrop-filter: blur(3px) saturate(180%);
+            background-color: rgba(255, 255, 255, 0.122);
+
+            .daily {
+                padding: 5px;
+                min-width: 100px;
+                border-radius: 17px 0 0 17px;
+                backdrop-filter: blur(3px) saturate(180%);
+                background-color: rgba(15, 96, 167, 0.214);
+
+                .event-day {
+                    font-size: 2.5em;
+                    font-weight: bold;
+                    white-space: nowrap;
+
+                    .event-month {
+                        font-size: 0.4em;
+                        font-weight: normal;
+                    }
+                }
+            }
+
+            .event-description {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                border-radius: 0 17px 17px 0;
+                backdrop-filter: blur(1px) saturate(180%);
+                background-color: rgba(255, 255, 255, 0.114);
+
+                .label {
+                    padding: 3px 3px;
+                    width: fit-content;
+                    white-space: nowrap;
+                    border-radius: 0 10px 0 0;
+                    background-color: rgba(0, 0, 0, 0.201);
+
+                    .today {
+                        background-color: rgba(144, 238, 144, 0.534);
+                        padding: 2px 4px;
+                        border-radius: 0 8px 0 0;
+                    }
+                }
+
+                .description {
+                    height: 100%;
+                    text-align: start;
+                    padding: 3px 5px;
+                    border-radius: 0 17px 17px 0;
+                    background-color: rgba(255, 255, 255, 0.151);
+                }
+            }
         }
 
-        .btn-closed-text-apostolic-year:hover {
-            background-color: var(--color-level1);
-            color: var(--color-level3);
+        .diary-card:hover {
+            background-color: rgba(255, 255, 255, 0.3);
         }
     }
 
-    dialog::backdrop {
-        background-color: #000000a9;
-    }
-}
-
-/* RESPONSIVE */
-
-@media (max-width: 860px) {
-
-    #home {
-
-        .church-name-and-apostolic-year {
-            line-height: 55px;
-
-            .church-name {
-                font-size: 85px;
-            }
-
-            .apostolic-year {
-                font-size: 65px;
-            }
-
-            span {
-                font-size: 30px;
-                font-weight: 200;
-            }
-        }
-
-        .text-apostolic-year {
-            font-size: 14px;
-        }
-
-        .btn-text-apostolic-year{
-            font-size: 14px;
-        }
-    }
-}
-
-@media (max-width: 764px) {
-
-    #home {
-
-        .church-name-and-apostolic-year {
-            line-height: 45px;
-
-            .church-name {
-                font-size: 58px;
-                font-weight: 500
-            }
-
-            .apostolic-year {
-                font-size: 48px;
-                font-weight: 500
-            }
-
-            span {
-                font-size: 23px;
-            }
-        }
-
-        dialog {
-
-            .verse {
-                font-size: 15px;
-            }
-        }
+    .calendar::before {
+        font-size: 2em;
+        margin-top: 100px;
+        content: 'Agenda ICP';
+        font-family: 'caveat';
     }
 }
 
-@media (max-width: 547px) {
-
+@media(width < 1600px){
     #home {
-
-        .church-name-and-apostolic-year {
-            line-height: 25px;
-
-            .church-name {
-                font-size: 32px;
-                font-weight: 600
+        .church-information {
+            .sign-icp-casa-do-pai {
+                max-width: 500px;
             }
+        }
+    }
+}
 
-            .apostolic-year {
-                font-size: 25px;
-                font-weight: 600
-            }
+@media(width < 1260px){
+    #home {
+        padding-top: 135px;
+        background-attachment: scroll;
 
-            span {
-                font-size: 14px;
+        .calendar::before {
+            margin-top: 0;
+        }
+    }
+}
+
+@media(width < 720px){
+    #home {
+        font-size: 0.8em;
+
+        .church-information {
+            .sign-icp-casa-do-pai {
+                padding: 0 40px;
             }
         }
 
-        .text-apostolic-year {
-            font-size: 13px;
-        }
+        .calendar {
+            .diary-card {
+                .daily {
+                    min-width: 80px;
 
-        .btn-text-apostolic-year{
-            font-size: 13px;
+                    .event-day {
+                        .event-month {
+                            font-size: 0.4em;
+                        }
+                    }
+                }
+            }
         }
     }
 }
